@@ -28,7 +28,7 @@
     </header>
     <nav>
         <button style="background-color: rgba(67, 181, 52, 0.689);">
-            <a href="index.html" style="color: rgb(0, 0, 0);font-size:medium">
+            <a href="index.html" style="color: rgb(0, 0, 0);font-size:medium ; text-decoration: none;">
                 &lt Tornar a la pàgina principal
             </a>
         </button>
@@ -46,10 +46,10 @@
             <a href="#etiquetes" style="color: black;">
                 <li>Etiquetes bàsiques</li>
             </a>
-            <a href="" style="color: black;">
+            <a href="#elements" style="color: black;">
                 <li>Elements HTML i Anidament</li>
             </a>
-            <a href="" style="color: black;">
+            <a href="#atributs" style="color: black;">
                 <li>Atributs HTML</li>
             </a>
             <a href="" style="color: black;">
@@ -90,6 +90,7 @@
             <li><b>HTML5</b> (2014): Última versió amb noves funcionalitats com suport per a vídeo, àudio i gràfics.
             </li>
         </ol>
+
         <span style="font-size: large;">
             <h2 id="estructura">Estructura Bàsica d’un document HTML</h2>
         </span>
@@ -100,9 +101,219 @@
             <li>Cada pàgina HTML segueix una estructura similar, començant pel <b>&lt!DOCTYPE&gt</b>, seguit de les
                 etiquetes &lthtml&gt, &lthead&gt, &ltbody&gt.</li>
         </ol>
+
+        <center>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;
+                            &lt;head&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+
         <span style="font-size: large;">
             <h2 id="etiquetes">Etiquetes bàsiques</h2>
         </span>
+
+        <h3>&lt;title&gt;</h3>
+        <p>
+            Defineix el títol que apareix a la pestanya del navegador o als
+            resultats dels cercadors.
+        </p>
+
+        <h3>&lt;h1&gt; a &lt;h6&gt;</h3>
+        <p>
+            Utilitzats per definir títols i subtítols a la pàgina web.
+        </p>
+        <h3>&lt;p&gt;</h3>
+        <p>
+            S’utilitza per definir blocs de text o paràgrafs.
+        </p>
+        <h3>&lt;br&gt;</h3>
+        <p>
+            Força el text a començar en una nova línia.
+        </p>
+        <h3>&lt;& nbsp&gt;</h3>
+        <p>
+            Inserta un espai en blanc que no es trenca entre línies.
+        </p>
+
+        <center>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;!DOCTYPE html &gt;<br>
+                            &lt;html &gt;<br>
+                            &lt;head &gt; <br>
+                            &lt;title &gt; Hellow world &lt;/title &gt; <br>
+                            &lt;/head &gt;<br>
+                            &lt;body &gt;<br>
+                            &lt;h1 &gt; Titol 1 &lt;/h1 &gt;<br>
+                            &lt;h2 &gt; Titol 2 &lt;/h2 &gt;<br>
+                            &lt;h3 &gt; Titol 3 &lt;/h3 &gt;<br>
+                            &lt;h4 &gt; Titol 4 &lt;/h4 &gt;<br>
+                            &lt;h5 &gt; Titol 5 &lt;/h5 &gt;<br>
+                            &lt;h6 &gt; Titol 6 &lt;/h6 &gt;<br>
+                            &lt;p &gt; Aquest és un paràgraf amb informació. &lt; / p &gt;<br>
+                            &lt;p &gt; Aquest text es dividirà&lt;br&gt; en dues línies. &lt;/p &gt;<br>
+                            &lt;p &gt; Aquesta és la frase "12& nbsp; homes". &lt;/ p&gt;<br>
+                            &lt;/body &gt;<br>
+                            &lt;/html &gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+
+        <span style="font-size: large;">
+            <h2 id="elements">Elements HTML i anidament</h2>
+        </span>
+
+        <h3>Diferència entre elements i etiquetes</h3>
+
+        <h3>Etiquets (Tag):</h3>
+        <ul>
+            <li>
+                És la part que defineix l'inici i el final d'un
+                component en HTML.
+            </li>
+            <li>
+                Es delimita amb els símbols &lt; &gt;.
+                Exemples: &lt;p&gt;, &lt;/p&gt;, &lt;h1&gt;,&lt;/h1&gt; .
+            </li>
+        </ul>
+
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;p&gt;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+
+        <h3>Element:</h3>
+        <ul>
+            <li>
+                Un element inclou l’etiqueta d’obertura, el
+                contingut (si n’hi ha), i l’etiqueta de tancament.
+            </li>
+            <li>
+                Els elements poden ser buits o contenir altres
+                elements dins.
+            </li>
+        </ul>
+
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" >
+                <tr>
+                    <td>
+                        <p>
+                            &lt;p&gt;Aquest es un paràgraf &lt;/p&gt;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+
+        <h3>Elements anidats</h3>
+        <ul>
+            <li>
+                <b>Anidament</b> es refereix a col·locar un
+                element HTML dins d’un altre
+                element.
+            </li>
+            <li>
+                És important seguir correctament
+                l'ordre de les etiquetes: la primera
+                que s'obre és l'última que es tanca.
+            </li>
+        </ul>
+
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;!DOCTYPE html &gt;<br>
+                            &lt;html &gt;<br>
+                            &lt;head &gt; <br>
+                            &lt;title &gt; Hellow world &lt;/title &gt; <br>
+                            &lt;/head &gt;<br>
+                            &lt;body &gt;<br>
+                            &lt;h1 &gt; Titol 1 &lt;/h1 &gt;<br>
+                            &lt;h2 &gt; Titol 2 &lt;/h2 &gt;<br>
+                            &lt;h3 &gt; Titol 3 &lt;/h3 &gt;<br>
+                            &lt;h4 &gt; Titol 4 &lt;/h4 &gt;<br>
+                            &lt;h5 &gt; Titol 5 &lt;/h5 &gt;<br>
+                            &lt;h6 &gt; Titol 6 &lt;/h6 &gt;<br>
+                            &lt;p &gt; Aquest és un paràgraf amb informació. &lt; / p &gt;<br>
+                            &lt;p &gt; Aquest text es dividirà&lt;br&gt; en dues línies. &lt;/p &gt;<br>
+                            &lt;p &gt; Aquesta és la frase "12& nbsp; homes". &lt;/ p&gt;<br>
+                            &lt;/body &gt;<br>
+                            &lt;/html &gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+
+        <span style="font-size: large;">
+            <h2 id="atributs">Atributs HTML</h2>
+        </span>
+
+        <p>
+            Els atributs en HTML són elements que afegeixen informació extra a les etiquetes HTML per modificar-ne el
+            comportament o l'aparença. Aquests atributs sempre es col·loquen dins de l'etiqueta d'obertura i segueixen
+            el format <b>nom="valor"</b>.
+        </p>
+
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;title&gt;Hellow world&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;h1 id="titol" &gt;Titol 1&lt;/h1&gt;<br>
+                            &lt;h2 class="important" &gt;Titol 2&lt;/h2&gt;<br>
+                            &lt;h3 style="color: blue; text-align: center;" &gt;Titol 3&lt;/h3&gt;<br>
+                            &lt;h4 title="Informació addicional" &gt;Titol 4&lt;/h4&gt;<br>
+                            &lt;img src="https://picsum.photos/300/300?random=1" alt="Descripció de la imatge" &gt;<br>
+                            &lt;a href="https://www.exemple.com"&gt;Enllaç&lt;/a&gt;<br>
+                            &lt;p&gt;Aquest és un paràgraf amb informació.&lt;/p&gt;<br>
+                            &lt;p&gt;Aquest text es dividirà&lt;br&gt;en dues línies.&lt;/p&gt;<br>
+                            &lt;p&gt;Aquesta és la frase "12& nbsp;homes".&lt;/p&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+
+        
 
     </section>
 </body>
