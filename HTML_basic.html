@@ -566,6 +566,111 @@
             <h2 id="enllaços">Enllaços en HTML</h2>
         </span>
 
+        <ul>
+            <li>
+                L'etiqueta &lt;a&gt; s'utilitza per crear enllaços (links) a altres pàgines web, documents, <br>seccions
+                dins de la mateixa pàgina o qualsevol altre recurs.
+            </li>
+
+            <li>
+                L’element essencial per als enllaços és l’atribut href que defineix l’URL a la qual redirigeix l’usuari.
+            </li>
+
+            <li>
+                El text entre l’etiqueta d'obertura i la de tancament és el que els usuaris veuran i podran clicar per
+                ser redirigits.
+            </li>
+        </ul>
+
+        <ol>
+            <li>
+                <b>href (hypertext reference):</b>
+            </li>
+        </ol>
+
+        <ul>
+            <li>
+                Defineix la URL de destinació de l'enllaç.
+            </li>
+            <li>
+                Pot ser un enllaç absolut (una URL completa) o relatiu (camí dins del mateix domini).
+            </li>
+        </ul>
+
+        <ol start="2">
+            <li>
+                <b>target:</b>
+            </li>
+        </ol>
+
+        <ul>
+            <li>
+                Defineix on s’obrirà l’enllaç: a la mateixa pestanya, en una nova pestanya o en un nou marc.
+            </li>
+            <li>
+                Els valors més habituals són:
+            </li>
+            <ul>
+                <li>
+                    <b>_blank:</b> Obre l'enllaç en una <b>nova pestaña</b>
+                </li>
+                <li>
+                    <b>_self:</b> Obre l'enllaç a la <b>mateixa pestanya</b> (valor predeterminat)
+                </li>
+            </ul>
+        </ul>
+
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;a href="https://www.google.com"&gt;Cerca a Google&lt;/a&gt;<br>
+                            &lt;a href="#capitol1"&gt;Anar al Capítol 1&lt;/a&gt;<br>
+                            &lt;h2 id="capitol1"&gt;Capítol 1&lt;/h2&gt;<br>
+                            &lt;a href="https://www.exemple.com" target="_blank"&gt;Obre en una nova
+                            pestanya&lt;/a&gt;<br>
+
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
+        </center>
+
+        <center>
+            <table border="5" cellpadding="10">
+                <tr>
+                    <td>
+                        <p><b>Bones pràctiques:</b></p>
+                        <ul>
+                            <li>
+                                Utilitza <b>enllaços descriptius</b> en lloc de genèrics com "Clica aquí". Aixó millora l'accessibilitat i el SEO.
+                            </li>
+                            <ul>
+                                <li>
+                                    <b>Correcte:</b> "Visita la pàgina de <b>Contacte</b>."
+                                </li>
+                                <li>
+                                    <b>Incorrecte:</b> "Clica aquí".
+                                </li>
+                            </ul>
+                            <li>
+                                Utilitza target="_blank" només quan sigui realment necessari, ja que obrir enllaços en noves pestanyes pot confondre alguns usuaris.
+                            </li>
+                            <li>
+                                Sempre assegura’t que els enllaços siguin accessibles afegint una descripció adequada per a usuaris amb lectors de pantalla.
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
 
     </section>
 </body>
