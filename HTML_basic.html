@@ -64,7 +64,7 @@
             <a href="#enllaços" style="color: black;">
                 <li>Enllaços</li>
             </a>
-            <a href="#" style="color: black;">
+            <a href="#llistes" style="color: black;">
                 <li>Llistes</li>
             </a>
             <a href="#" style="color: black;">
@@ -649,7 +649,8 @@
                         <p><b>Bones pràctiques:</b></p>
                         <ul>
                             <li>
-                                Utilitza <b>enllaços descriptius</b> en lloc de genèrics com "Clica aquí". Aixó millora l'accessibilitat i el SEO.
+                                Utilitza <b>enllaços descriptius</b> en lloc de genèrics com "Clica aquí". Aixó millora
+                                l'accessibilitat i el SEO.
                             </li>
                             <ul>
                                 <li>
@@ -660,10 +661,12 @@
                                 </li>
                             </ul>
                             <li>
-                                Utilitza target="_blank" només quan sigui realment necessari, ja que obrir enllaços en noves pestanyes pot confondre alguns usuaris.
+                                Utilitza target="_blank" només quan sigui realment necessari, ja que obrir enllaços en
+                                noves pestanyes pot confondre alguns usuaris.
                             </li>
                             <li>
-                                Sempre assegura’t que els enllaços siguin accessibles afegint una descripció adequada per a usuaris amb lectors de pantalla.
+                                Sempre assegura’t que els enllaços siguin accessibles afegint una descripció adequada
+                                per a usuaris amb lectors de pantalla.
                             </li>
                         </ul>
                     </td>
@@ -671,6 +674,159 @@
             </table>
         </center>
         <br>
+
+        <span style="font-size: large;">
+            <h2 id="llistes">Llistes en HTML</h2>
+        </span>
+
+        <h3>Llistes no ordenades (&lt;ul&gt;)</h3>
+
+        <ol>
+            <li>
+                S'utilitzen per a llistes d’elements sense un ordre específic.
+            </li>
+            <li>
+                Els elements es mostren amb vinyetes o altres símbols abans de cada ítem.
+            </li>
+            <li>
+                Cada element de la llista es defineix amb l’etiqueta &lt;li&gt; (list item).
+            </li>
+        </ol>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;ul&gt;<br>
+                            &lt;li&gt;Primer ítem&lt;/li&gt;<br>
+                            &lt;li&gt;Segon ítem&lt;/li&gt;<br>
+                            &lt;li&gt;Tercer ítem&lt;/li&gt;<br>
+                            &lt;/ul&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3>Llistes ordenades (&lt;ol&gt;)</h3>
+
+        <ol>
+            <li>
+                S’utilitzen per a llistes en què l'ordre dels elements és rellevant.
+            </li>
+            <li>
+                Els elements es numeren automàticament (1, 2, 3, etc.).
+            </li>
+            <li>
+                Cada element de la llista també es defineix amb &lt;li&gt;.
+            </li>
+        </ol>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;ol&gt;<br>
+                            &lt;li&gt;Primer ítem&lt;/li&gt;<br>
+                            &lt;li&gt;Segon ítem&lt;/li&gt;<br>
+                            &lt;li&gt;Tercer ítem&lt;/li&gt;<br>
+                            &lt;/ol&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+
+        <h3>Atributs de llistes:</h3>
+
+        <ol>
+            <li>
+                <b>Atribut type (per a llistes ordenades &lt;ol&gt; ):</b>
+            </li>
+            <ul>
+                <li>
+                    Es pot utilitzar per definir el tipus de numeració de la llista:
+                </li>
+                <ul>
+                    <li>
+                        <b>1</b>: Nombres (predeterminat).
+                    </li>
+                    <li>
+                        <b>A</b>: Majúscules.
+                    </li>
+                    <li>
+                        <b>a</b>: Miúscules.
+                    </li>
+                    <li>
+                        <b>I</b>: Números romans en majúscules.
+                    </li>
+                    <li>
+                        <b>i</b>: Números romans en minúscules.
+                    </li>
+                </ul>
+            </ul>
+            <li>
+                <b>Atribut start (per a llistes ordenades &lt;ol&gt; );</b>
+            </li>
+            <ul>
+                <li>
+                    Defineix el número o lletra per començar la numeració.
+                </li>
+            </ul>
+        </ol>
+
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;ol type="A"&gt;<br>
+                            &lt;li&gt;Primer ítem&lt;/li&gt;<br>
+                            &lt;li&gt;Segon ítem&lt;/li&gt;<br>
+                            &lt;/ol&gt;<br>
+                            <br>
+                            &lt;ol start="5"&gt;<br>
+                            &lt;li&gt;Ítem número 5&lt;/li&gt;<br>
+                            &lt;li&gt;Ítem número 6&lt;/li&gt;<br>
+                            &lt;/ol&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <br>
+        <center>
+            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
+        </center>
+
+        <center>
+            <table border="5" cellpadding="10">
+                <tr>
+                    <td>
+                        <p><b>Bones pràctiques:</b></p>
+                        <ul>
+                            <li>
+                                Utilitza llistes no ordenades (<ul>) quan l'ordre dels ítems no sigui important.
+                            </li>
+                            <li>
+                                Utilitza llistes ordenades (<ol>) quan l'ordre sigui rellevant.   
+                            </li>
+                            <li>
+                                Personalitza les llistes segons les necessitats visuals o estilístiques utilitzant els atributs adequats.
+                            </li>
+                           
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+
 
     </section>
 </body>
