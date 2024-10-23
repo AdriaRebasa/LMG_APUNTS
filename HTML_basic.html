@@ -67,7 +67,7 @@
             <a href="#llistes" style="color: black;">
                 <li>Llistes</li>
             </a>
-            <a href="#" style="color: black;">
+            <a href="#taules" style="color: black;">
                 <li>Taules</li>
             </a>
         </ol>
@@ -799,7 +799,6 @@
             </table>
         </center>
         <br>
-        <br>
         <center>
             <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
         </center>
@@ -811,21 +810,207 @@
                         <p><b>Bones pràctiques:</b></p>
                         <ul>
                             <li>
-                                Utilitza llistes no ordenades (<ul>) quan l'ordre dels ítems no sigui important.
+                                Utilitza llistes no ordenades (&lt;ul&gt;) quan l'ordre dels ítems no sigui important.
                             </li>
                             <li>
-                                Utilitza llistes ordenades (<ol>) quan l'ordre sigui rellevant.   
+                                Utilitza llistes ordenades (&lt;ol&gt;) quan l'ordre sigui rellevant.
                             </li>
                             <li>
-                                Personalitza les llistes segons les necessitats visuals o estilístiques utilitzant els atributs adequats.
+                                Personalitza les llistes segons les necessitats visuals o estilístiques utilitzant els
+                                atributs adequats.
                             </li>
-                           
                         </ul>
                     </td>
                 </tr>
             </table>
         </center>
         <br>
+
+        <span style="font-size: large;">
+            <h2 id="taules">Taules bàsiques amb HTML</h2>
+        </span>
+
+        <h3>Etiqueta &lt;table&gt;:</h3>
+        <ol>
+            <li>
+                L’etiqueta &lt;table&gt; defineix la taula i actua com el contenidor principal.
+            </li>
+        </ol>
+
+        <h3>Etiqueta &lt;tr&gt; (table row):</h3>
+        <ol>
+            <li>
+                Defineix una fila dins de la taula.
+            </li>
+        </ol>
+
+        <h3>Etiqueta &lt;td&gt; (table data):</h3>
+        <ul>
+            <li>
+                Crea una cel·la dins d’una fila de la taula (dades de la taula).
+            </li>
+        </ul>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;table&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;Maria&lt;/td&gt;<br>
+                            &lt;td&gt;25&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;Joan&lt;/td&gt;<br>
+                            &lt;td&gt;30&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;/table&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+
+        <h3>Atributs de Taula:</h3>
+
+        <ol>
+            <li>
+                <b>Border:</b>
+            </li>
+            <ul>
+                <li>
+                    Afegeix una vora a la taula i a les cel·les.
+                </li>
+            </ul>
+            <li>
+                <b>Cellpadding:</b>
+            </li>
+            <ul>
+                <li>
+                    Defineix l’espai entre el contingut de la cel·la i la vora de la cel·la.
+                </li>
+            </ul>
+            <li>
+                <b>Cellspacing:</b>
+            </li>
+            <ul>
+                <li>
+                    Controla l'espai entre les cel·les de la taula.
+                </li>
+            </ul>
+        </ol>
+
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;table border="1" cellpadding="10" cellspacing="5"&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;Nom&lt;/td&gt;<br>
+                            &lt;td&gt;Edat&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;Joan&lt;/td&gt;<br>
+                            &lt;td&gt;28&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;Maria&lt;/td&gt;<br>
+                            &lt;td&gt;32&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;/table&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+
+        <h3>Etiqueta &lt;thead&gt; (table head):</h3>
+
+        <ul>
+            <li>
+                Defineix l’encapçalament de la taula, agrupant les files d'encapçalament (habitualment les que contenen
+                &lt;th&gt;).
+            </li>
+        </ul>
+
+        <h3>Etiqueta &lt;tbody&gt; (table body):</h3>
+
+        <ul>
+            <li>
+                Agrupa el cos de la taula, és a dir, les files de dades. Se sol fer servir per separar les dades dels
+                encapçalaments.
+            </li>
+        </ul>
+
+        <h3>Etiqueta &lt;th&gt; (table header):</h3>
+
+        <ul>
+            <li>
+                S’utilitza per crear una cel·la d'encapçalament en una taula. El text dins de &lt;th&gt; apareix en
+                negreta i centrat per defecte.
+            </li>
+        </ul>
+
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;table border="1" cellpadding="10" cellspacing="5"&gt;<br>
+                            &lt;thead&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;th&gt;Producte&lt;/th&gt;<br>
+                            &lt;th&gt;Preu&lt;/th&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;/thead&gt;<br>
+                            &lt;tbody&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;Poma&lt;/td&gt;<br>
+                            &lt;td&gt;1.50€&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;tr&gt;<br>
+                            &lt;td&gt;Plàtan&lt;/td&gt;<br>
+                            &lt;td&gt;1.00€&lt;/td&gt;<br>
+                            &lt;/tr&gt;<br>
+                            &lt;/tbody&gt;<br>
+                            &lt;/table&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
+        </center>
+
+        <center>
+            <table border="5" cellpadding="10">
+                <tr>
+                    <td>
+                        <p><b>Bones pràctiques:</b></p>
+                        <ol>
+                            <li>
+                                Utilitza &lt;thead&gt; i &lt;tbody&gt; per organitzar les taules, especialment en taules
+                                més grans, <br>per tal de separar
+                                clarament l’encapçalament del cos de la taula.
+
+                            </li>
+                            <li>
+                                Mantingues les taules simples per a dades tabulades i utilitza CSS per al disseny més <br>
+                                avançat de les taules (colors, mida de la font, etc.).
+                            </li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </center>
 
 
     </section>
