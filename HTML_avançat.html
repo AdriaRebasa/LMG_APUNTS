@@ -51,10 +51,10 @@
             <a href="#multimedia" style="color: black;">
                 <li>Multimèdia amb HTML</li>
             </a>
-            <a href="#" style="color: black;">
+            <a href="#etiqueta" style="color: black;">
                 <li>Etiqueta</li>
             </a>
-            <a href="#" style="color: black;">
+            <a href="#metadades" style="color: black;">
                 <li>Metadades en HTML</li>
             </a>
         </ol>
@@ -567,7 +567,9 @@
                 <tr>
                     <td>
                         <p>
-                            &lt;input type="email" name="email" required placeholder="Escriu el teu correu electrònic" oninvalid="this.setCustomValidity('Si us plau, introdueix una adreça de correu vàlida')"&gt;<br> 
+                            &lt;input type="email" name="email" required placeholder="Escriu el teu correu electrònic"
+                            oninvalid="this.setCustomValidity('Si us plau, introdueix una adreça de correu
+                            vàlida')"&gt;<br>
                         </p>
                     </td>
                 </tr>
@@ -577,6 +579,195 @@
         <span style="font-size: large;">
             <h2 id="multimedia">Multimèdia amb HTML</h2>
         </span>
+        <p>
+            HTML5 ha introduït maneres noves i eficients d'integrar multimèdia a les pàgines web, incloent imatges,
+            vídeos, i àudio sense necessitat de plug-ins externs com Flash. Això ha millorat tant la compatibilitat com
+            la
+            usabilitat en múltiples dispositius, especialment en mòbils.
+        </p>
+        <h3>Imatges en HTML</h3>
+        <p>
+            L'etiqueta &lt;img&gt; s'utilitza per inserir imatges en una pàgina web. Aquesta etiqueta és auto-tancada
+            (no té etiqueta de tancament). <br>
+            <b>Atributs principals:</b>
+        </p>
+
+        <ol>
+            <li>
+                <b>src</b>: Especifica la ruta de la imatge.
+            </li>
+            <li>
+                <b>alt</b>: Proporciona un text alternatiu per a la imatge, útil per a l'accessibilitat i SEO.
+            </li>
+            <li>
+                <b>width</b> i <b>height</b>: Controlen la mida de la imatge.
+            </li>
+        </ol>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;img src="imatge.jpg" alt="Descripció de la imatge" width="300" height="200"&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+
+        <h3>Videos en HTML5</h3>
+        <p><b>Etiqueta &lt;video&gt;</b></p>
+
+        <ul>
+            <li>
+                HTML5 introdueix l'etiqueta &lt;video&gt; per inserir vídeos de manera nativa a la pàgina web, sense
+                necessitat de plug-ins externs.
+            </li>
+            <li>
+                <b>Atributs principals:</b>
+            </li>
+            <ul>
+                <li>
+                    <b>src</b>: Ruta del fitxer de video.
+                </li>
+                <li>
+                    <b>controls</b>: Mostra els controls del video(play, pause, volum...).
+                </li>
+                <li>
+                    <b>autoplay</b>: Fa que el video es reprodueixi automàticament quan es carrega la pàgina.
+                </li>
+                <li>
+                    <b>loop</b>: Fa que el video es reprodueixi en bucle.
+                </li>
+                <li>
+                    <b>muted</b>: Reprodueix el video sense so.
+                </li>
+            </ul>
+        </ul>
+
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;video src="video.mp4" controls width="400" height="300"&gt;<br>
+                            El teu navegador no suporta el vídeo.<br>
+                            &lt;/video&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+
+        <h3>Àudio en HTML5</h3>
+        <p><b>Etiqueta &lt;audio&gt;</b></p>
+
+        <ul>
+            <li>
+                De manera similar als vídeos, HTML5 permet inserir àudio natiu amb l'etiqueta &lt;audio&gt;.
+            </li>
+            <li>
+                <b>Atributs principals:</b>
+            </li>
+            <ul>
+                <li>
+                    <b>src</b>: Ruta del fitxer de audio.
+                </li>
+                <li>
+                    <b>controls</b>: Mostra els controls d'audio(play, pause, volum...).
+                </li>
+                <li>
+                    <b>autoplay</b>: Reprodueix automàticament l'àudio quan es carrega la pàgina.
+                </li>
+                <li>
+                    <b>loop</b>: Fa que l'audio es reprodueixi en bucle.
+                </li>
+                <li>
+                    <b>muted</b>: Reprodueix l'audio sense so.
+                </li>
+            </ul>
+        </ul>
+
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;audio src="audio.mp3" controls&gt;<br>
+                            El teu navegador no suporta l'àudio.<br>
+                            &lt;/audio&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
+        </center>
+
+        <center>
+            <table border="5" cellpadding="10">
+                <tr>
+                    <td>
+                        <p><b>Bones pràctiques per integrar multimèdia:</b></p>
+                        <ol>
+                            <li>
+                                Proporciona formats de fitxer compatibles amb els diferents navegadors per a àudio i
+                                vídeo (com MP4, WebM, OGG).
+                            </li>
+                            <li>
+                                Utilitza l’atribut alt per a les imatges per millorar l’accessibilitat i optimitzar el
+                                SEO.
+                            </li>
+                            <li>
+                                No facis ús de l’atribut autoplay en àudio i vídeo, ja que pot interrompre l'experiència
+                                de l'usuari, especialment en dispositius mòbils.
+                            </li>
+                            <li>
+                                Controla la mida dels fitxers multimèdia per evitar temps de càrrega llargs i millorar
+                                l'experiència de l'usuari.
+                            </li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <span style="font-size: large;">
+            <h2 id="etiqueta">Etiqueta</h2>
+        </span>
+
+        <h3>&lt;center&gt;</h3>
+        <p>
+            L'etiqueta &lt;center&gt; s'utilitzava en versions antigues d'HTML per centrar el contingut dins d'una
+            pàgina web, tant text com imatges o altres elements.
+        </p>
+        <p>
+            Està obsoleta en HTML5, i s'hauria d'evitar el seu ús. En lloc d'<center>, avui dia es fa servir CSS per
+            centrar els elements de manera més eficient.
+        </p>
+
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;center&gt;<br> 
+                            &lt;h1&gt;Benvinguts al meu lloc web&lt;/h1&gt;<br> 
+                            &lt;/center&gt;<br> 
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
 
 
 
