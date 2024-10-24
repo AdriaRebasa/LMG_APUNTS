@@ -743,13 +743,34 @@
             <h2 id="etiqueta">Etiqueta</h2>
         </span>
 
-        <h3>&lt;center&gt;</h3>
+        <ol>
+            <a href="#center" style="color: black;">
+                <li>&lt;center&gt;</li>
+            </a>
+            <a href="#div" style="color: black;">
+                <li>&lt;div&gt;</li>
+            </a>
+            <a href="#span" style="color: black;">
+                <li>&lt;span&gt;</li>
+            </a>
+            <a href="#hr" style="color: black;">
+                <li>&lt;hr&gt;</li>
+            </a>
+            <a href="#template" style="color: black;">
+                <li>&lt;template&gt;</li>
+            </a>
+            <a href="#iframe" style="color: black;">
+                <li>&lt;iframe&gt;</li>
+            </a>
+        </ol>
+
+        <h3 id="center">&lt;center&gt;</h3>
         <p>
             L'etiqueta &lt;center&gt; s'utilitzava en versions antigues d'HTML per centrar el contingut dins d'una
             pàgina web, tant text com imatges o altres elements.
         </p>
         <p>
-            Està obsoleta en HTML5, i s'hauria d'evitar el seu ús. En lloc d'<center>, avui dia es fa servir CSS per
+            Està obsoleta en HTML5, i s'hauria d'evitar el seu ús. En lloc d'&lt;center&gt;, avui dia es fa servir CSS per
                 centrar els elements de manera més eficient.
         </p>
 
@@ -783,7 +804,7 @@
         </center>
         <br>
 
-        <h3>&lt;div&gt;</h3>
+        <h3 id="div">&lt;div&gt;</h3>
         <ul>
             <li>
                 L'etiqueta &lt;div&gt; (abreviatura de "division") s'utilitza per crear contenidors de bloc en una
@@ -842,7 +863,7 @@
             </table>
         </center>
         <br>
-        <h3>&lt;span&gt;</h3>
+        <h3 id="span">&lt;span&gt;</h3>
         <ul>
             <li>
                 L'etiqueta &lt;span&gt; és una etiqueta inline (en línia) que serveix per estilitzar o manipular petites
@@ -899,7 +920,7 @@
             </table>
         </center>
         <br>
-        <h3>&lt;hr&gt;</h3>
+        <h3 id="hr">&lt;hr&gt;</h3>
         <p>
             En HTML5, l'ús de l'etiqueta &lt;hr&gt; no és només decoratiu. Té un valor semàntic per indicar un canvi de
             tema o una ruptura en el flux del document, ajudant tant als motors de cerca com a les eines
@@ -935,7 +956,8 @@
                             <li>
                                 No abusis de l'etiqueta &lt;hr&gt;: Utilitza-la només quan sigui
                                 necessari per separar seccions importants o marcar un canvi
-                                de contingut. </li>
+                                de contingut.
+                            </li>
                             <li>
                                 Estilitza les línies amb CSS: Tot i que
                                 &lt;hr&gt; genera una línia
@@ -962,7 +984,7 @@
             </table>
         </center>
         <br>
-        <h3>&lt;template&gt;</h3>
+        <h3 id="template">&lt;template&gt;</h3>
         <p>
             L'etiqueta &lt;template&gt; s'utilitza per definir fragments d'HTML reutilitzables que no es mostren
             immediatament quan la
@@ -1030,7 +1052,7 @@
             </table>
         </center>
         <br>
-        <h3>&lt;iframe&gt;</h3>
+        <h3 id="iframe">&lt;iframe&gt;</h3>
         <p>
             &lt;iframe&gt; (inline frame) és una etiqueta HTML que permet inserir una pàgina HTML dins d'una altra
             pàgina web. És una manera més moderna i segura
@@ -1100,7 +1122,276 @@
             </table>
         </center>
         <br>
+        <span style="font-size: large;">
+            <h2 id="metadades">Metadades en HTML</h2>
+        </span>
+        <ol>
+            <a href="#charset" style="color: black;">
+                <li>Charset</li>
+            </a>
+            <a href="#viewport" style="color: black;">
+                <li>Viewport</li>
+            </a>
+            <a href="#descripcio" style="color: black;">
+                <li>Descripció de la pàgina</li>
+            </a>
+            <a href="#keywords" style="color: black;">
+                <li>Keywords</li>
+            </a>
+            <a href="#autor" style="color: black;">
+                <li>Autor de la pàgina</li>
+            </a>
+            <a href="#robot" style="color: black;">
+                <li>Instruccions per a Robots de Cerca</li>
+            </a>
+            <a href="#ogt" style="color: black;">
+                <li>Open Graph Tags</li>
+            </a>
+            <a href="#mobils" style="color: black;">
+                <li>Metadades per a aplicacions mòbils</li>
+            </a>
+            <a href="#favicon" style="color: black;">
+                <li>Favicon</li>
+            </a>
+            <a href="#lang" style="color: black;">
+                <li>Lang</li>
+            </a>
+        </ol>
+        <p>
+            Les metadades són informació que es col·loca dins del document HTML per descriure característiques del
+            document com l'autor, la
+            descripció, les paraules clau o les instruccions per a motors de cerca i navegadors.
+        </p>
+        <p>
+            Les metadades s'inclouen dins de l'etiqueta &lt;head&gt; del document HTML, però no es mostren directament a
+            la pàgina web. Aquestes dades
+            ajuden els navegadors, motors de cerca, i aplicacions a comprendre millor el contingut de la pàgina.
+        </p>
+        <h3 id="charset">Charset (Conjunt de caràcters)</h3>
+        <p>
+            1. Defineix el conjunt de caràcters utilitzat en el document, com UTF-8, que suporta gairebé tots els
+            caràcters.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;meta charset="UTF-8"&gt;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="viewport">Viewport (Responsive design)</h3>
+        <p>
+            1. Ajuda a configurar la visualització d'una pàgina web en dispositius mòbils, garantint que el contingut
+            s'adapti correctament a diferents
+            mides de pantalla.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="descripcio">Descripció de la pàgina</h3>
+        <p>
+            1. Proporciona una breu descripció del contingut de la pàgina. Aquesta informació és utilitzada pels motors
+            de cerca per mostrar descripcions en els resultats de cerca.
 
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;meta name="description" content="Aquest és un lloc web que ofereix informació sobre
+                            HTML5."&gt;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="keywords">Paraules clau (keywords)</h3>
+        <p>
+            1. Defineix un conjunt de paraules clau que descriuen el contingut de la pàgina. Encara que no és tan
+            utilitzat pels motors de cerca
+            actualment, pot ser útil per altres aplicacions.
+
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;meta name="keywords" content="HTML5, desenvolupament web, CSS, JavaScript"&gt;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="autor">Autor de la pàgina</h3>
+        <p>
+            1. Indica el nom de l'autor o empresa responsable del contingut de la pàgina web.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;meta name="author" content="Jaume Pericàs"&gt;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="robot">Instruccions per a Robots de Cerca</h3>
+        <p>
+            1. Indica als motors de cerca com indexar i rastrejar el contingut de la pàgina.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;meta name="robots" content="index, follow"&gt;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="ogt">Open Graph Tags (per a xarxes socials)</h3>
+        <p>
+            1. Els Open Graph Tags són metadades utilitzades per les xarxes socials (com Facebook o Twitter) per mostrar
+            previsualitzacions
+            personalitzades quan es comparteix un enllaç.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;meta property="og:title" content="Títol de la pàgina"&gt;<br>
+                            &lt;meta property="og:description" content="Descripció de la pàgina"&gt;<br>
+                            &lt;meta property="og:image" content="imatge.jpg"&gt;<br>
+                            &lt;meta property="og:url" content="https://www.exemple.com"&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="mobils">Metadades per a aplicacions mòbils</h3>
+        <p>
+            1. Pots utilitzar metadades per millorar com es veu la pàgina quan es desa a la pantalla d'inici en un
+            dispositiu mòbil.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;link rel="apple-touch-icon" href="icon.png"&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="favicon">Favicon</h3>
+        <p>
+            1. Tot i que no és un &lt;meta&gt;, el favicon és una metadada visual important que es mostra a la pestanya
+            del navegador.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="lang">Lang (atribut)</h3>
+        <p>
+            1. L'atribut lang es defineix dins de l'etiqueta &lt;html&gt; per especificar l'idioma general de la pàgina,
+            o dins de qualsevol altra etiqueta HTML
+            per marcar un idioma específic dins d'una part del contingut.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="ca"&gt;<br>
+                            ...<br>
+                            &lt;/html&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
+        </center>
+
+        <center>
+            <table border="5" cellpadding="10">
+                <tr>
+                    <td>
+                        <p>Bones Pràctiques per a l'Ús de Metadades en HTML</p>
+                        <ol>
+                            <li>
+                                Utilitza el conjunt de caràcters UTF-8 per garantir que tots els caràcters
+                                especials es mostrin correctament en tots els dispositius i navegadors.
+                            <li>
+                                Inclou una descripció rellevant de la pàgina per ajudar els motors de cerca
+                                a comprendre millor el contingut i millorar la teva classificació.
+                            </li>
+                            <li>
+                                Optimitza per a mòbils utilitzant l'etiqueta viewport per assegurar que la
+                                pàgina s'adapti correctament a diferents dispositius.
+                            </li>
+                            <li>
+                                Inclou Open Graph Tags si vols que la teva pàgina es mostri de manera
+                                atractiva quan es comparteixi en xarxes socials.
+                            </li>
+                            <li>
+                                Utilitza metadades de robots per controlar com vols que els motors de
+                                cerca indexin o no indexin la teva pàgina.
+                            </li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </center>
 
 
     </section>
