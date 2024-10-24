@@ -48,7 +48,7 @@
             <a href="#especial" style="color: black;">
                 <li>Tipus d'Entrada Especials</li>
             </a>
-            <a href="#" style="color: black;">
+            <a href="#multimedia" style="color: black;">
                 <li>Multimèdia amb HTML</li>
             </a>
             <a href="#" style="color: black;">
@@ -395,7 +395,7 @@
                 <tr>
                     <td>
                         <p>
-                            &lt;input type="text" name="nom" required placeholder="Escriu el teu nom"&gt;<br> 
+                            &lt;input type="text" name="nom" required placeholder="Escriu el teu nom"&gt;<br>
                         </p>
                     </td>
                 </tr>
@@ -414,7 +414,8 @@
                 <tr>
                     <td>
                         <p>
-                            &lt;input type="text" name="telefon" pattern="\d{9}" placeholder="Escriu el teu telèfon"&gt;<br> 
+                            &lt;input type="text" name="telefon" pattern="\d{9}" placeholder="Escriu el teu
+                            telèfon"&gt;<br>
                         </p>
                     </td>
                 </tr>
@@ -424,7 +425,158 @@
         <span style="font-size: large;">
             <h2 id="especial">Tipues d'entrada especials</h2>
         </span>
+        <p>
+            Aquests tipus permeten validar i mostrar els camps de formulari de manera més adequada segons el tipus de
+            dades que esperes obtenir de l'usuari:
+        </p>
+        <div>
+            <b>
+                &lt;input type="password"&gt;<br>
+                &lt;input type="email"&gt;<br>
+                &lt;input type="url"&gt;<br>
+                &lt;input type="tel"&gt;<br>
+                &lt;input type="number"&gt;<br>
+                &lt;input type="range"&gt;<br>
+                &lt;input type="date"&gt;<br>
+                &lt;input type="time"&gt;<br>
+                &lt;input type="datetime-local"&gt;<br>
+                &lt;input type="month"&gt;<br>
+                &lt;input type="week"&gt;<br>
+                &lt;input type="color"&gt;<br>
+                &lt;input type="file"&gt;<br>
+            </b>
+        </div>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;form action="submit.php" method="POST"&gt;<br>
+                            &lt;label for="nom"&gt;Nom:&lt;/label&gt;<br>
+                            &lt;input type="text" id="nom" name="nom" placeholder="Escriu el teu nom"
+                            required&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="password"&gt;Contrasenya:&lt;/label&gt;<br>
+                            &lt;input type="password" id="password" name="password" placeholder="Escriu la teva
+                            contrasenya" required&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="email"&gt;Correu electrònic:&lt;/label&gt;<br>
+                            &lt;input type="email" id="email" name="email" placeholder="Escriu el teu correu electrònic"
+                            required&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="web"&gt;Lloc web:&lt;/label&gt;<br>
+                            &lt;input type="url" id="web" name="web" placeholder="Escriu l'URL del teu lloc
+                            web"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="telefon"&gt;Telèfon:&lt;/label&gt;<br>
+                            &lt;input type="tel" id="telefon" name="telefon" placeholder="Escriu el teu número de
+                            telèfon"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="edat"&gt;Edat:&lt;/label&gt;<br>
+                            &lt;input type="number" id="edat" name="edat" min="0" max="100" step="1" placeholder="Escriu
+                            la teva edat"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="satisfaccio"&gt;Nivell de satisfacció:&lt;/label&gt;<br>
+                            &lt;input type="range" id="satisfaccio" name="satisfaccio" min="1" max="10"
+                            step="1"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="naixement"&gt;Data de naixement:&lt;/label&gt;<br>
+                            &lt;input type="date" id="naixement" name="data-naixement"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="hora-reunio"&gt;Hora de la reunió:&lt;/label&gt;<br>
+                            &lt;input type="time" id="hora-reunio" name="hora-reunio"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="data-reunio"&gt;Data i hora de la reunió:&lt;/label&gt;<br>
+                            &lt;input type="datetime-local" id="data-reunio"
+                            name="data-reunio"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="mes"&gt;Mes preferit:&lt;/label&gt;<br>
+                            &lt;input type="month" id="mes" name="mes-preferit"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="setmana"&gt;Setmana de l'any:&lt;/label&gt;<br>
+                            &lt;input type="week" id="setmana" name="setmana-seleccionada"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="color"&gt;Color preferit:&lt;/label&gt;<br>
+                            &lt;input type="color" id="color" name="color-preferit"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="arxiu"&gt;Carrega un fitxer:&lt;/label&gt;<br>
+                            &lt;input type="file" id="arxiu" name="document"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;button type="submit"&gt;Enviar&lt;/button&gt;<br>
+                            &lt;/form&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3>Bones pràctiques</h3>
+        <p>
+            Aquí tens una llista de bones pràctiques per crear formularis en HTML. Seguint aquestes recomanacions,
+            milloraràs l'experiència d'usuari, l'accessibilitat, la seguretat i l'eficiència dels formularis a les teves
+            pàgines web:
+        </p>
+        <center>
+            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
+        </center>
 
+        <center>
+            <table border="5" cellpadding="10">
+                <tr>
+                    <td>
+                        <p><b>Bones pràctiques per utilitzar els elements d'estructura:</b></p>
+                        <ul>
+                            <li>
+                                Ús de l’etiqueta &lt;label&gt; per millorar l'accessibilitat
+                            </li>
+                            <li>
+                                Utilitza els tipus d'entrada adequats
+                            </li>
+                            <li>
+                                Definir l'atribut required per a camps obligatoris
+                            </li>
+                            <li>
+                                Afegeix la validació nativa amb pattern i min/max
+                            </li>
+                            <li>
+                                Usa placeholder per proporcionar pistes
+                            </li>
+                            <li>
+                                Organitza els camps del formulari en grups lògics
+                            </li>
+                            <li>
+                                Proporciona informació clara sobre els errors
+                            </li>
+                            <li>
+                                Utilitza autocomplete per millorar l’experiència d'usuari
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;fieldset&gt;<br>
+                            &lt;legend&gt;Informació Personal&lt;/legend&gt;<br>
+                            &lt;label for="nom"&gt;Nom:&lt;/label&gt;<br>
+                            &lt;input type="text" id="nom" name="nom" required&gt;<br>
+                            &lt;!-- altres camps --&gt;<br>
+                            &lt;/fieldset&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;input type="email" name="email" required placeholder="Escriu el teu correu electrònic" oninvalid="this.setCustomValidity('Si us plau, introdueix una adreça de correu vàlida')"&gt;<br> 
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <span style="font-size: large;">
+            <h2 id="multimedia">Multimèdia amb HTML</h2>
+        </span>
 
 
 
