@@ -962,6 +962,74 @@
             </table>
         </center>
         <br>
+        <h3>&lt;template&gt;</h3>
+        <p>
+            L'etiqueta &lt;template&gt; s'utilitza per definir fragments d'HTML reutilitzables que no es mostren
+            immediatament quan la
+            pàgina es carrega. El contingut dins d'un &lt;template&gt; no s'afegeix al document fins que es manipula
+            explícitament amb
+            JavaScript, cosa que permet crear plantilles que es poden clonar i inserir al DOM de manera dinàmica.
+        </p>
+        <p>
+            Aquest element és ideal quan vols tenir estructures HTML preparades que podràs afegir al document en temps
+            real,
+            sense que aquestes siguin rendides o visibles inicialment. Això proporciona molta flexibilitat per a
+            aplicacions
+            dinàmiques.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;template id="mevaPlantilla"&gt;<br>
+                            &lt;div class="producte"&gt;<br>
+                            &lt;h2&gt;Nom del Producte&lt;/h2&gt;<br>
+                            &lt;p&gt;Descripció del producte&lt;/p&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/template&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
+        </center>
+
+        <center>
+            <table border="5" cellpadding="10">
+                <tr>
+                    <td>
+                        <ul>
+                            <li>
+                                Mantingues les plantilles simples i modulars: Organitza el teu codi dins de
+                                &lt;template&gt; de manera que puguis reutilitzar fàcilment aquestes plantilles en
+                                diferents seccions de la pàgina.
+                            <li>
+                                Clona plantilles amb JavaScript: L'etiqueta no renderitza el seu contingut fins
+                                que l'invoques amb JavaScript, la qual cosa et dona control total sobre quan i
+                                com s'ha d'afegir al DOM.
+                            </li>
+                            <li>
+                                Utilitza plantilles per generar contingut dinàmicament: És molt útil en
+                                aplicacions on el contingut ha de ser generat o actualitzat en temps real, com
+                                llistes, formularis o targetes de productes.
+                            </li>
+                            <li>
+                                No incloguis contingut actiu dins del template: Els scripts o altres continguts
+                                interactius dins del template no s'executaran fins que el contingut sigui afegit al
+                                DOM, així que assegura't d'afegir els elements interactius un cop estigui al
+                                document.
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
 
     </section>
 
