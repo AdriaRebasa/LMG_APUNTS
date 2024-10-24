@@ -42,10 +42,10 @@
             <a href="#formularis" style="color: black;">
                 <li>Formularis amb HTML</li>
             </a>
-            <a href="#" style="color: black;">
+            <a href="#Vformularis" style="color: black;">
                 <li>Validació de Formularis</li>
             </a>
-            <a href="#" style="color: black;">
+            <a href="#especial" style="color: black;">
                 <li>Tipus d'Entrada Especials</li>
             </a>
             <a href="#" style="color: black;">
@@ -376,8 +376,55 @@
             </table>
         </center>
         <br>
+        <span style="font-size: large;">
+            <h2 id="Vformularis">Validació de Formularis</h2>
+        </span>
+        <p>
+            HTML5 introdueix una sèrie de nous atributs i tipus d'entrada per validar els formularis de manera nativa,
+            sense la necessitat de JavaScript.
+        </p>
+        <h3>Atribut required:</h3>
+        <ul>
+            <li>
+                Marca un camp a <b>obligatori</b>
+            </li>
+        </ul>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;input type="text" name="nom" required placeholder="Escriu el teu nom"&gt;<br> 
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3>Atribut pattern:</h3>
+        <ul>
+            <li>
+                Permet definir un <b>patró</b> amb expresions regulars per validar l'entrada de l'usuari.
+            </li>
+        </ul>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;input type="text" name="telefon" pattern="\d{9}" placeholder="Escriu el teu telèfon"&gt;<br> 
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <span style="font-size: large;">
+            <h2 id="especial">Tipues d'entrada especials</h2>
+        </span>
 
-        
 
 
 
