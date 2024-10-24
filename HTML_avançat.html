@@ -198,12 +198,14 @@
             <h2 id="formularis">Formularis amb HTML</h2>
         </span>
         <p>
-            Els formularis són una de les eines més importants d'HTML perquè permeten als usuaris enviar dades a un servidor.
-Amb HTML5, els formularis han guanyat noves funcionalitats que milloren la seva usabilitat i validació.
+            Els formularis són una de les eines més importants d'HTML perquè permeten als usuaris enviar dades a un
+            servidor.
+            Amb HTML5, els formularis han guanyat noves funcionalitats que milloren la seva usabilitat i validació.
         </p>
         <p>
-            Un formulari es crea amb l'etiqueta &lt;form&gt;, que actua com el contenidor de tots els elements d'entrada (text, botons,
-                seleccions, etc.).
+            Un formulari es crea amb l'etiqueta &lt;form&gt;, que actua com el contenidor de tots els elements d'entrada
+            (text, botons,
+            seleccions, etc.).
         </p>
         <p>
             Cada camp del formulari s’envia com a dades a un servidor quan l'usuari l’envia.
@@ -214,15 +216,53 @@ Amb HTML5, els formularis han guanyat noves funcionalitats que milloren la seva 
                 <tr>
                     <td>
                         <p>
-                            &lt;form action="submit.php" method="POST"&gt;<br> 
-                            &lt;!-- Aquí van els camps del formulari --&gt;<br> 
-                            &lt;/form&gt;<br> 
+                            &lt;form action="submit.php" method="POST"&gt;<br>
+                            &lt;!-- Aquí van els camps del formulari --&gt;<br>
+                            &lt;/form&gt;<br>
                         </p>
                     </td>
                 </tr>
             </table>
         </center>
         <br>
+        <p>
+            L'etiqueta &lt;input&gt; és l'element més versàtil per crear camps d'entrada. El tipus de camp es defineix
+            amb
+            l'atribut type.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;input type="text" name="nom" placeholder="Escriu el teu nom"&gt;<br>
+                            &lt;input type="email" name="email" placeholder="Escriu el teu correu electrònic"&gt;<br>
+                            &lt;input type="password" name="password" placeholder="Escriu la teva contrasenya"&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <p>
+            L'etiqueta &lt;label&gt; s'utilitza per a etiquetar camps de formulari i millorar l'accessibilitat.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;label for="nom"&gt;Nom:&lt;/label&gt;<br>
+                            &lt;input type="text" id="nom" name="nom"&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+
 
 
 
