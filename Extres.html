@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Adrià Rebasa Gamundi</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description"
+        content="Aquesta pagina web son els apunts de l'assignatura Llenguatges de marques sobre HTML">
+    <meta name="keywords" content="HTML5, llenguatges de marques, apunts">
+    <meta name="author" content="Adrià Rebasa">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Apunts llenguatges de marques">
+    <meta property="og:description"
+        content="Aquesta es una pàgina on anirè apuntant els apunts de l'assignatura de llenguatges de marques">
+    <meta property="og:image" content="imatge.jpg">
+    <meta property="og:url" content="https://adriarebasa.github.io/LMG_APUNTS/">
+</head>
+
+<body style="background-color: rgb(233, 239, 167);">
+    <header>
+        <center>
+            <span style="color: rgb(15, 136, 229);">
+                <h1>Coneixements adicionals</h1>
+            </span>
+        </center>
+    </header>
+
+    <nav>
+        <button style="background-color: rgba(67, 181, 52, 0.689);">
+            <a href="index.html" style="color: rgb(0, 0, 0);font-size:medium ; text-decoration: none;">
+                &lt; Tornar a la pàgina principal
+            </a>
+        </button>
+
+        <span style="color: rgb(5, 5, 70); font-size: large;">
+            <h2>Índex</h2>
+        </span>
+        <ol>
+            <a href="#details" style="color: black;">
+                <li>Details</li>
+            </a>
+            <a href="#llistes" style="color: black;">
+                <li>Llistes de definició</li>
+            </a>
+
+        </ol>
+    </nav>
+    <br><br>
+
+    <section>
+        <span style="font-size: large;">
+            <h2>Coneixements adicionals</h2>
+        </span>
+        <p>
+            En aquesta secció s'ampliaran els coneixements amb 2 etiquetes noves que no hem vist a l'ssigntura. <br>
+            Son dos etiquetes en HTML que m'han prescut interessants i que he vist que s'emplean a pàgines web.
+            <br> En aquesta web he ulitilitzat altres conceptes que no hem vist a classe, pero no son etiquetes; sino
+            que <br>
+            son atributs d'etiquetes ja vistes.
+        </p>
+
+        <span style="font-size: large;">
+            <h2 id="details">Details</h2>
+        </span>
+
+        <p>
+            L'etiqueta <b>&lt;details&gt;</b> serveix per crear un desplegable amb informació addicional.
+        </p>
+
+        <h3>Exemple:</h3>
+
+        <details>
+            <summary>Detalls</summary>
+            <p>Aqui hi van els detalls</p>
+        </details>
+
+        <center>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;details&gt;<br>
+                            &lt;summary&gt;Aqui va el nom que vols que se vegi &lt;/details&gt;<br>
+                            &lt;p&gt;<br>
+                            aqui hi van els detalls <br>
+                            &lt;/p&gt;<br>
+                            &lt;/details&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <span style="font-size: large;">
+            <h2 id="llistes">Llistes de definició</h2>
+        </span>
+
+        <p>
+            Les llistes de definició son com les llistes vistes als apunts de classe, pero sense els punts o caracters a
+            cada element. <br>
+            Aquestes son útils per a crear definicions de diferents termes.
+        </p>
+
+        <h3>Estructura:</h3>
+
+        <p>
+            les etiquetes &lt;dl&gt; &lt;/dl&gt; delimiten la llista completa <br>
+            les etiquetes &lt;dt&gt; &lt;/dt&gt; delimiten els termes <br>
+            les etiquetes &lt;dd&gt; &lt;/dd&gt; delimiten les definicions <br>
+        </p>
+        <p>
+            Normalment aquestes llistes no tenen una estructura obligatoria, llevat de &lt;dl&gt; &lt;/dl&gt;, pero
+            solen tenir per cada <br>
+            terme una o un parell de definicions.
+        </p>
+        <h3>Exemple:</h3>
+
+        <dl>
+            <dt>
+                terme 1
+            </dt>
+            <dd>
+                definició 1
+            </dd>
+            <dt>
+                terme 2
+            </dt>
+            <dd>
+                definició 1
+            </dd>
+            <dd>
+                definició 2
+            </dd>
+            <dd>
+                definició 3
+            </dd>
+        </dl>
+
+        <center>
+            <table border="5" cellpadding="50">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;dl&gt;<br>
+                            &lt;dt&gt;<br>
+                            terme 1<br>
+                            &lt;/dt&gt;<br>
+                            &lt;dd&gt;<br>
+                            definició 1<br>
+                            &lt;/dd&gt;<br>
+                            &lt;dt&gt;<br>
+                            terme 2<br>
+                            &lt;/dt&gt;<br>
+                            &lt;dd&gt;<br>
+                            definició 1<br>
+                            &lt;/dd&gt;<br>
+                            &lt;dd&gt;<br>
+                            definició 2<br>
+                            &lt;/dd&gt;<br>
+                            &lt;dd&gt;<br>
+                            definició 3<br>
+                            &lt;/dd&gt;<br>
+                            &lt;/dl&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+
+    </section>
+
+</body>
+
+</html>
