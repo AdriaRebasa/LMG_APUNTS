@@ -29,28 +29,1377 @@
     <nav>
         <button style="background-color: rgba(67, 181, 52, 0.689);">
             <a href="index.html" style="color: rgb(0, 0, 0);font-size:medium ; text-decoration: none;">
-                &lt Tornar a la pàgina principal
+                &lt; Tornar a la pàgina principal
             </a>
         </button>
         <span style="color: rgb(5, 5, 70);">
             <h2>Índex</h2>
         </span>
         <ol>
-            <a href="" style="color: black;"><li>HTML5 i la seva Evolució</li></a>
-            <a href="" style="color: black;"><li>Estructura Bàsica d’un document HTML</li></a>
-            <a href="" style="color: black;"><li>Formularis amb HTML</li></a>
-            <a href="" style="color: black;"><li>Validació de Formularis</li></a>
-            <a href="" style="color: black;"><li>Tipus d'Entrada Especials</li></a>
-            <a href="" style="color: black;"><li>Multimèdia amb HTML</li></a>
-            <a href="" style="color: black;"><li>Etiqueta</li></a>
-            <a href="" style="color: black;"><li>Metadades en HTML</li></a>
+            <a href="#evolució" style="color: black;">
+                <li>HTML5 i la seva Evolució</li>
+            </a>
+            <a href="#formularis" style="color: black;">
+                <li>Formularis amb HTML</li>
+            </a>
+            <a href="#Vformularis" style="color: black;">
+                <li>Validació de Formularis</li>
+            </a>
+            <a href="#especial" style="color: black;">
+                <li>Tipus d'Entrada Especials</li>
+            </a>
+            <a href="#multimedia" style="color: black;">
+                <li>Multimèdia amb HTML</li>
+            </a>
+            <a href="#etiqueta" style="color: black;">
+                <li>Etiqueta</li>
+            </a>
+            <a href="#metadades" style="color: black;">
+                <li>Metadades en HTML</li>
+            </a>
         </ol>
     </nav>
-<<<<<<< Updated upstream
-=======
+    <br>
+    <hr>
+    <br>
+    <section>
 
-    
->>>>>>> Stashed changes
+        <span style="font-size: large;">
+            <h2 id="evolució">HTML 5 i la seva evolució</h2>
+        </span>
+
+        <p>
+            És una evolució important respecte a les versions anteriors d’HTML, introduint noves etiquetes <br>i
+            funcionalitats que permeten una millor gestió del contingut multimèdia, formularis avançats, i <br>millores
+            en la semàntica de la pàgina web.
+        </p>
+
+        <h3>Etiquetes en HTML5</h3>
+
+        <ol>
+            <li>
+                <b>&lt;section&gt;</b>: Ús per a agrupar contingut relacionat dins d’una pàgina.
+            </li>
+            <li>
+                <b>&lt;article&gt;</b>: Representa un bloc de contingut autònom, com un article d'un blog, una notícia o
+                un post
+                que pot existir independentment del lloc web.
+            </li>
+            <li>
+                <b>&lt;aside&gt;</b>: Defineix contingut relacionat amb el contingut principal però no essencial.
+                Normalment
+                s'utilitza per a barres laterals, anuncis, o informació complementària.
+            </li>
+            <li>
+                <b>&lt;border&gt;</b> i <b>&lt;footer&gt;</b>: Etiquetes per a definir les capçaleres i peus de pàgina.
+            </li>
+            <li>
+                <b>&lt;nav&gt;</b>: Específica per a les barres de navegació del lloc web.
+            </li>
+            <li>
+                <b>&lt;figure&gt;</b> i <b>&lt;figcaption&gt;</b>: Agrupa elements multimèdia (com imatges o vídeos) i
+                les seves
+                descripcions.
+            </li>
+        </ol>
+        <br>
+        <center>
+            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
+        </center>
+
+        <center>
+            <table border="5" cellpadding="10">
+                <tr>
+                    <td>
+                        <p><b>Bones pràctiques per utilitzar els elements d'estructura:</b></p>
+                        <ol>
+                            <li>
+                                Utilitza elements semàntics per organitzar millor la
+                                pàgina. Això fa que sigui més comprensible per als
+                                navegadors, cercadors i lectors de pantalla.
+                            </li>
+                            <li>
+                                Evita l'ús excessiu de divs ("divitis") i aprofita les
+                                etiquetes com &lt;section&gt;, &lt;article&gt;, i &lt;aside&gt; per fer
+                                que la pàgina sigui més semàntica.
+                            </li>
+                            <li>
+                                Proporciona enllaços de navegació clars dins dels
+                                elements &lt;header&gt; i &lt;footer&gt; per millorar
+                                l’experiència d’usuari i l’accessibilitat.
+                            </li>
+                            <li>
+                                No abusis de &lt;aside&gt;, ja que aquest element ha de
+                                contenir informació complementària i no essencial per
+                                al contingut principal.
+                            </li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="ca"&gt;<br>
+                            &lt;head&gt;<br>
+                            &lt;meta charset="UTF-8"&gt;<br>
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                            &lt;title&gt;Pàgina Web Amb HTML5&lt;/title&gt;<br>
+                            &lt;/head&gt;<br>
+                            &lt;body&gt;<br>
+                            &lt;header&gt;<br>
+                            &lt;h1&gt;Benvinguts al meu lloc web&lt;/h1&gt;<br>
+                            &lt;nav&gt;<br>
+                            &lt;ul&gt;<br>
+                            &lt;li&gt;&lt;a href="#home"&gt;Inici&lt;/a&gt;&lt;/li&gt;<br>
+                            &lt;li&gt;&lt;a href="#sobre"&gt;Sobre Nosaltres&lt;/a&gt;&lt;/li&gt;<br>
+                            &lt;li&gt;&lt;a href="#contact"&gt;Contacte&lt;/a&gt;&lt;/li&gt;<br>
+                            &lt;/ul&gt;<br>
+                            &lt;/nav&gt;<br>
+                            &lt;/header&gt;<br>
+                            &lt;section&gt;<br>
+                            &lt;h2&gt;Sobre Nosaltres&lt;/h2&gt;<br>
+                            &lt;p&gt;Som una empresa dedicada al desenvolupament web i serveis digitals.&lt;/p&gt;<br>
+                            &lt;/section&gt;<br>
+                            &lt;article&gt;<br>
+                            &lt;h2&gt;Projecte destacat&lt;/h2&gt;<br>
+                            &lt;p&gt;Vam desenvolupar una aplicació web per a una gran empresa amb les<br>
+                            últimes tecnologies.&lt;/p&gt;<br>
+                            &lt;/article&gt;<br>
+                            &lt;aside&gt;<br>
+                            &lt;h3&gt;Notícies Recents&lt;/h3&gt;<br>
+                            &lt;p&gt;Explora les últimes novetats del nostre blog.&lt;/p&gt;<br>
+                            &lt;/aside&gt;<br>
+                            &lt;footer&gt;<br>
+                            &lt;p&gt;&copy; 2024 Empresa XYZ. Tots els drets reservats.&lt;/p&gt;<br>
+                            &lt;nav&gt;<br>
+                            &lt;ul&gt;<br>
+                            &lt;li&gt;&lt;a href="#politica-privacitat"&gt;Política de
+                            Privacitat&lt;/a&gt;&lt;/li&gt;<br>
+                            &lt;li&gt;&lt;a href="#avis-legal"&gt;Avís Legal&lt;/a&gt;&lt;/li&gt;<br>
+                            &lt;/ul&gt;<br>
+                            &lt;/nav&gt;<br>
+                            &lt;/footer&gt;<br>
+                            &lt;/body&gt;<br>
+                            &lt;/html&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <hr>
+
+        <span style="font-size: large;">
+            <h2 id="formularis">Formularis amb HTML</h2>
+        </span>
+        <p>
+            Els formularis són una de les eines més importants d'HTML perquè permeten als usuaris enviar dades a un
+            servidor.
+            Amb HTML5, els formularis han guanyat noves funcionalitats que milloren la seva usabilitat i validació.
+        </p>
+        <p>
+            Un formulari es crea amb l'etiqueta &lt;form&gt;, que actua com el contenidor de tots els elements d'entrada
+            (text, botons,
+            seleccions, etc.).
+        </p>
+        <p>
+            Cada camp del formulari s’envia com a dades a un servidor quan l'usuari l’envia.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;form action="submit.php" method="POST"&gt;<br>
+                            &lt;!-- Aquí van els camps del formulari --&gt;<br>
+                            &lt;/form&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <p>
+            L'etiqueta &lt;input&gt; és l'element més versàtil per crear camps d'entrada. El tipus de camp es defineix
+            amb
+            l'atribut type.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;input type="text" name="nom" placeholder="Escriu el teu nom"&gt;<br>
+                            &lt;input type="email" name="email" placeholder="Escriu el teu correu electrònic"&gt;<br>
+                            &lt;input type="password" name="password" placeholder="Escriu la teva contrasenya"&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <p>
+            L'etiqueta &lt;label&gt; s'utilitza per a etiquetar camps de formulari i millorar l'accessibilitat.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;label for="nom"&gt;Nom:&lt;/label&gt;<br>
+                            &lt;input type="text" id="nom" name="nom"&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <p>
+            Per a textos llargs, com comentaris o descripcions, s'utilitza &lt;textarea&gt;, que permet una àrea de text
+            més gran.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;textarea name="comentari" rows="4" cols="50" placeholder="Escriu el teu comentari
+                            aquí"&gt;&lt;/textarea&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <p>
+            &gt;select:&lt; es fa servir per crear llistes desplegables de selecció. Cada opció dins de la llista es
+            defineix amb &gt;option:&lt;.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;label for="ciutat"&gt;Selecciona la teva ciutat:&lt;/label&gt;<br>
+                            &lt;select id="ciutat" name="ciutat"&gt;<br>
+                            &lt;option value="barcelona"&gt;Barcelona&lt;/option&gt;<br>
+                            &lt;option value="madrid"&gt;Madrid&lt;/option&gt;<br>
+                            &lt;option value="valencia"&gt;València&lt;/option&gt;<br>
+                            &lt;/select&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <p>
+            Atribut multiple per les llistes desplegables de selecció. Permet seleccionar múltiples opcions en una
+            llista de
+            selecció.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;select name="interessos" multiple&gt;<br>
+                            &lt;option value="programacio"&gt;Programació&lt;/option&gt;<br>
+                            &lt;option value="disseny"&gt;Disseny&lt;/option&gt;<br>
+                            &lt;option value="marketing"&gt;Màrqueting&lt;/option&gt;<br>
+                            &lt;/select&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <p>
+            S'utilitza per crear botons d'enviament o d’altres accions dins del formulari.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;button type="submit"&gt;Enviar&lt;/button&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <p>
+            Radio buttons permeten seleccionar una opció d'un conjunt de possibilitats.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;label&gt;&lt;input type="radio" name="sexe" value="home"&gt; Home&lt;/label&gt;<br>
+                            &lt;label&gt;&lt;input type="radio" name="sexe" value="dona"&gt; Dona&lt;/label&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <p>
+            Els checkboxes permeten seleccionar diverses opcions independents.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;label&gt;&lt;input type="checkbox" name="subscripcio" value="noticies"&gt; Subscriu-me a
+                            les notícies&lt;/label&gt;<br>
+                            &lt;label&gt;&lt;input type="checkbox" name="subscripcio" value="ofertes"&gt; Subscriu-me a
+                            les ofertes&lt;/label&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <hr>
+        <span style="font-size: large;">
+            <h2 id="Vformularis">Validació de Formularis</h2>
+        </span>
+        <p>
+            HTML5 introdueix una sèrie de nous atributs i tipus d'entrada per validar els formularis de manera nativa,
+            sense la necessitat de JavaScript.
+        </p>
+        <h3>Atribut required:</h3>
+        <ul>
+            <li>
+                Marca un camp a <b>obligatori</b>
+            </li>
+        </ul>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;input type="text" name="nom" required placeholder="Escriu el teu nom"&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3>Atribut pattern:</h3>
+        <ul>
+            <li>
+                Permet definir un <b>patró</b> amb expresions regulars per validar l'entrada de l'usuari.
+            </li>
+        </ul>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;input type="text" name="telefon" pattern="\d{9}" placeholder="Escriu el teu
+                            telèfon"&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <hr>
+        <span style="font-size: large;">
+            <h2 id="especial">Tipues d'entrada especials</h2>
+        </span>
+        <p>
+            Aquests tipus permeten validar i mostrar els camps de formulari de manera més adequada segons el tipus de
+            dades que esperes obtenir de l'usuari:
+        </p>
+        <div>
+            <b>
+                &lt;input type="password"&gt;<br>
+                &lt;input type="email"&gt;<br>
+                &lt;input type="url"&gt;<br>
+                &lt;input type="tel"&gt;<br>
+                &lt;input type="number"&gt;<br>
+                &lt;input type="range"&gt;<br>
+                &lt;input type="date"&gt;<br>
+                &lt;input type="time"&gt;<br>
+                &lt;input type="datetime-local"&gt;<br>
+                &lt;input type="month"&gt;<br>
+                &lt;input type="week"&gt;<br>
+                &lt;input type="color"&gt;<br>
+                &lt;input type="file"&gt;<br>
+            </b>
+        </div>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;form action="submit.php" method="POST"&gt;<br>
+                            &lt;label for="nom"&gt;Nom:&lt;/label&gt;<br>
+                            &lt;input type="text" id="nom" name="nom" placeholder="Escriu el teu nom"
+                            required&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="password"&gt;Contrasenya:&lt;/label&gt;<br>
+                            &lt;input type="password" id="password" name="password" placeholder="Escriu la teva
+                            contrasenya" required&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="email"&gt;Correu electrònic:&lt;/label&gt;<br>
+                            &lt;input type="email" id="email" name="email" placeholder="Escriu el teu correu electrònic"
+                            required&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="web"&gt;Lloc web:&lt;/label&gt;<br>
+                            &lt;input type="url" id="web" name="web" placeholder="Escriu l'URL del teu lloc
+                            web"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="telefon"&gt;Telèfon:&lt;/label&gt;<br>
+                            &lt;input type="tel" id="telefon" name="telefon" placeholder="Escriu el teu número de
+                            telèfon"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="edat"&gt;Edat:&lt;/label&gt;<br>
+                            &lt;input type="number" id="edat" name="edat" min="0" max="100" step="1" placeholder="Escriu
+                            la teva edat"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="satisfaccio"&gt;Nivell de satisfacció:&lt;/label&gt;<br>
+                            &lt;input type="range" id="satisfaccio" name="satisfaccio" min="1" max="10"
+                            step="1"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="naixement"&gt;Data de naixement:&lt;/label&gt;<br>
+                            &lt;input type="date" id="naixement" name="data-naixement"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="hora-reunio"&gt;Hora de la reunió:&lt;/label&gt;<br>
+                            &lt;input type="time" id="hora-reunio" name="hora-reunio"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="data-reunio"&gt;Data i hora de la reunió:&lt;/label&gt;<br>
+                            &lt;input type="datetime-local" id="data-reunio"
+                            name="data-reunio"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="mes"&gt;Mes preferit:&lt;/label&gt;<br>
+                            &lt;input type="month" id="mes" name="mes-preferit"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="setmana"&gt;Setmana de l'any:&lt;/label&gt;<br>
+                            &lt;input type="week" id="setmana" name="setmana-seleccionada"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="color"&gt;Color preferit:&lt;/label&gt;<br>
+                            &lt;input type="color" id="color" name="color-preferit"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;label for="arxiu"&gt;Carrega un fitxer:&lt;/label&gt;<br>
+                            &lt;input type="file" id="arxiu" name="document"&gt;&lt;br&gt;&lt;br&gt;<br>
+                            &lt;button type="submit"&gt;Enviar&lt;/button&gt;<br>
+                            &lt;/form&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3>Bones pràctiques</h3>
+        <p>
+            Aquí tens una llista de bones pràctiques per crear formularis en HTML. Seguint aquestes recomanacions,
+            milloraràs l'experiència d'usuari, l'accessibilitat, la seguretat i l'eficiència dels formularis a les teves
+            pàgines web:
+        </p>
+        <center>
+            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
+        </center>
+
+        <center>
+            <table border="5" cellpadding="10">
+                <tr>
+                    <td>
+                        <p><b>Bones pràctiques per utilitzar els elements d'estructura:</b></p>
+                        <ul>
+                            <li>
+                                Ús de l’etiqueta &lt;label&gt; per millorar l'accessibilitat
+                            </li>
+                            <li>
+                                Utilitza els tipus d'entrada adequats
+                            </li>
+                            <li>
+                                Definir l'atribut required per a camps obligatoris
+                            </li>
+                            <li>
+                                Afegeix la validació nativa amb pattern i min/max
+                            </li>
+                            <li>
+                                Usa placeholder per proporcionar pistes
+                            </li>
+                            <li>
+                                Organitza els camps del formulari en grups lògics
+                            </li>
+                            <li>
+                                Proporciona informació clara sobre els errors
+                            </li>
+                            <li>
+                                Utilitza autocomplete per millorar l’experiència d'usuari
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;fieldset&gt;<br>
+                            &lt;legend&gt;Informació Personal&lt;/legend&gt;<br>
+                            &lt;label for="nom"&gt;Nom:&lt;/label&gt;<br>
+                            &lt;input type="text" id="nom" name="nom" required&gt;<br>
+                            &lt;!-- altres camps --&gt;<br>
+                            &lt;/fieldset&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;input type="email" name="email" required placeholder="Escriu el teu correu electrònic"
+                            oninvalid="this.setCustomValidity('Si us plau, introdueix una adreça de correu
+                            vàlida')"&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <hr>
+        <span style="font-size: large;">
+            <h2 id="multimedia">Multimèdia amb HTML</h2>
+        </span>
+        <p>
+            HTML5 ha introduït maneres noves i eficients d'integrar multimèdia a les pàgines web, incloent imatges,
+            vídeos, i àudio sense necessitat de plug-ins externs com Flash. Això ha millorat tant la compatibilitat com
+            la
+            usabilitat en múltiples dispositius, especialment en mòbils.
+        </p>
+        <h3>Imatges en HTML</h3>
+        <p>
+            L'etiqueta &lt;img&gt; s'utilitza per inserir imatges en una pàgina web. Aquesta etiqueta és auto-tancada
+            (no té etiqueta de tancament). <br>
+            <b>Atributs principals:</b>
+        </p>
+
+        <ol>
+            <li>
+                <b>src</b>: Especifica la ruta de la imatge.
+            </li>
+            <li>
+                <b>alt</b>: Proporciona un text alternatiu per a la imatge, útil per a l'accessibilitat i SEO.
+            </li>
+            <li>
+                <b>width</b> i <b>height</b>: Controlen la mida de la imatge.
+            </li>
+        </ol>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;img src="imatge.jpg" alt="Descripció de la imatge" width="300" height="200"&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+
+        <h3>Videos en HTML5</h3>
+        <p><b>Etiqueta &lt;video&gt;</b></p>
+
+        <ul>
+            <li>
+                HTML5 introdueix l'etiqueta &lt;video&gt; per inserir vídeos de manera nativa a la pàgina web, sense
+                necessitat de plug-ins externs.
+            </li>
+            <li>
+                <b>Atributs principals:</b>
+            </li>
+            <ul>
+                <li>
+                    <b>src</b>: Ruta del fitxer de video.
+                </li>
+                <li>
+                    <b>controls</b>: Mostra els controls del video(play, pause, volum...).
+                </li>
+                <li>
+                    <b>autoplay</b>: Fa que el video es reprodueixi automàticament quan es carrega la pàgina.
+                </li>
+                <li>
+                    <b>loop</b>: Fa que el video es reprodueixi en bucle.
+                </li>
+                <li>
+                    <b>muted</b>: Reprodueix el video sense so.
+                </li>
+            </ul>
+        </ul>
+
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;video src="video.mp4" controls width="400" height="300"&gt;<br>
+                            El teu navegador no suporta el vídeo.<br>
+                            &lt;/video&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+
+        <h3>Àudio en HTML5</h3>
+        <p><b>Etiqueta &lt;audio&gt;</b></p>
+
+        <ul>
+            <li>
+                De manera similar als vídeos, HTML5 permet inserir àudio natiu amb l'etiqueta &lt;audio&gt;.
+            </li>
+            <li>
+                <b>Atributs principals:</b>
+            </li>
+            <ul>
+                <li>
+                    <b>src</b>: Ruta del fitxer de audio.
+                </li>
+                <li>
+                    <b>controls</b>: Mostra els controls d'audio(play, pause, volum...).
+                </li>
+                <li>
+                    <b>autoplay</b>: Reprodueix automàticament l'àudio quan es carrega la pàgina.
+                </li>
+                <li>
+                    <b>loop</b>: Fa que l'audio es reprodueixi en bucle.
+                </li>
+                <li>
+                    <b>muted</b>: Reprodueix l'audio sense so.
+                </li>
+            </ul>
+        </ul>
+
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;audio src="audio.mp3" controls&gt;<br>
+                            El teu navegador no suporta l'àudio.<br>
+                            &lt;/audio&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
+        </center>
+
+        <center>
+            <table border="5" cellpadding="10">
+                <tr>
+                    <td>
+                        <p><b>Bones pràctiques per integrar multimèdia:</b></p>
+                        <ol>
+                            <li>
+                                Proporciona formats de fitxer compatibles amb els diferents navegadors per a àudio i
+                                vídeo (com MP4, WebM, OGG).
+                            </li>
+                            <li>
+                                Utilitza l’atribut alt per a les imatges per millorar l’accessibilitat i optimitzar el
+                                SEO.
+                            </li>
+                            <li>
+                                No facis ús de l’atribut autoplay en àudio i vídeo, ja que pot interrompre l'experiència
+                                de l'usuari, especialment en dispositius mòbils.
+                            </li>
+                            <li>
+                                Controla la mida dels fitxers multimèdia per evitar temps de càrrega llargs i millorar
+                                l'experiència de l'usuari.
+                            </li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <hr>
+        <span style="font-size: large;">
+            <h2 id="etiqueta">Etiqueta</h2>
+        </span>
+
+        <ol>
+            <a href="#center" style="color: black;">
+                <li>&lt;center&gt;</li>
+            </a>
+            <a href="#div" style="color: black;">
+                <li>&lt;div&gt;</li>
+            </a>
+            <a href="#span" style="color: black;">
+                <li>&lt;span&gt;</li>
+            </a>
+            <a href="#hr" style="color: black;">
+                <li>&lt;hr&gt;</li>
+            </a>
+            <a href="#template" style="color: black;">
+                <li>&lt;template&gt;</li>
+            </a>
+            <a href="#iframe" style="color: black;">
+                <li>&lt;iframe&gt;</li>
+            </a>
+        </ol>
+
+        <h3 id="center">&lt;center&gt;</h3>
+        <p>
+            L'etiqueta &lt;center&gt; s'utilitzava en versions antigues d'HTML per centrar el contingut dins d'una
+            pàgina web, tant text com imatges o altres elements.
+        </p>
+        <p>
+            Està obsoleta en HTML5, i s'hauria d'evitar el seu ús. En lloc d'&lt;center&gt;, avui dia es fa servir CSS per
+                centrar els elements de manera més eficient.
+        </p>
+
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;center&gt;<br>
+                            &lt;h1&gt;Benvinguts al meu lloc web&lt;/h1&gt;<br>
+                            &lt;/center&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
+        </center>
+
+        <center>
+            <table border="5" cellpadding="14">
+                <tr>
+                    <td>
+                        <p><b>Està oblsolet no usar.</b></p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+
+        <h3 id="div">&lt;div&gt;</h3>
+        <ul>
+            <li>
+                L'etiqueta &lt;div&gt; (abreviatura de "division") s'utilitza per crear contenidors de bloc en una
+                pàgina HTML. És una
+                etiqueta de nivell de bloc, la qual cosa significa que ocupa tot l'ample disponible i comença en una
+                línia nova.
+            </li>
+            <li>
+                No té significat semàntic en si mateixa; simplement agrupa altres elements, com text, imatges o altres
+                etiquetes, i sol ser estilitzada amb CSS.
+            </li>
+            <li>
+                És útil per organitzar i dissenyar diferents seccions d'una pàgina web.
+            </li>
+        </ul>
+
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;div&gt;<br>
+                            &lt;h2&gt;Secció 1&lt;/h2&gt;<br>
+                            &lt;p&gt;Aquest és un paràgraf dins d'un div.&lt;/p&gt;<br>
+                            &lt;/div&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
+        </center>
+
+        <center>
+            <table border="5" cellpadding="10">
+                <tr>
+                    <td>
+                        <ul>
+                            <li>
+                                Un dels errors més comuns és l'ús excessiu de &lt;div&gt; per a qualsevol cosa, quan
+                                existeixen etiquetes semàntiques més adequades com &lt;header&gt;, &lt;section&gt;,
+                                &lt;article&gt;, &lt;footer&gt;, etc..
+                            </li>
+                            <li>
+                                Utilitza &lt;div&gt; per agrupar elements que formen una
+                                unitat lògica o visual dins de la pàgina, però sempre
+                                que no hi hagi una etiqueta semàntica més
+                                adequada.
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="span">&lt;span&gt;</h3>
+        <ul>
+            <li>
+                L'etiqueta &lt;span&gt; és una etiqueta inline (en línia) que serveix per estilitzar o manipular petites
+                porcions de text o contingut dins d'una pàgina. A diferència de &lt;div&gt;, no ocupa tot l'ample
+                disponible, sinó que ocupa només l'espai necessari.
+            </li>
+            <li>
+                També és una etiqueta no semàntica, usada principalment per aplicar estils o funcionalitat a un grup
+                específic d'elements dins d'un text.
+            </li>
+        </ul>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;p&gt;Aquest és un<br>
+                            &lt;span style="color: red;"&gt;text en vermell&lt;/span&gt;.<br>
+                            &lt;/p&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
+        </center>
+
+        <center>
+            <table border="5" cellpadding="10">
+                <tr>
+                    <td>
+                        <ul>
+                            <li>
+                                Ús Adequat de &lt;span&gt; per Estilitzar Text en Línia
+                            </li>
+                            <li>
+                                Evita Ús Excessiu de &lt;span&gt;
+                            </li>
+                            <li>
+                                Combina &lt;span&gt; amb CSS per Mantenir el Codi Netejat.
+                            </li>
+                            <li>
+                                Només per Elements en Línia
+                            </li>
+                            <li>
+                                Evita Abusar del &lt;span&gt; per Crear Contenidors Sense Necessitat
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="hr">&lt;hr&gt;</h3>
+        <p>
+            En HTML5, l'ús de l'etiqueta &lt;hr&gt; no és només decoratiu. Té un valor semàntic per indicar un canvi de
+            tema o una ruptura en el flux del document, ajudant tant als motors de cerca com a les eines
+            d'accessibilitat a entendre millor l'estructura del contingut.
+        </p>
+
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;h2&gt;Història de la companyia&lt;/h2&gt;<br>
+                            &lt;p&gt;La nostra empresa va ser fundada el 1990...&lt;/p&gt;<br>
+                            &lt;hr&gt;<br>
+                            &lt;h2&gt;Els nostres serveis&lt;/h2&gt;<br>
+                            &lt;p&gt;Oferim una àmplia gamma de serveis...&lt;/p&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
+        </center>
+
+        <center>
+            <table border="5" cellpadding="10">
+                <tr>
+                    <td>
+                        <ul>
+                            <li>
+                                No abusis de l'etiqueta &lt;hr&gt;: Utilitza-la només quan sigui
+                                necessari per separar seccions importants o marcar un canvi
+                                de contingut.
+                            </li>
+                            <li>
+                                Estilitza les línies amb CSS: Tot i que
+                                &lt;hr&gt; genera una línia
+                                per defecte, utilitza CSS per personalitzar-ne l'aspecte i fer
+                                que s'ajusti al disseny del teu lloc web.
+                            </li>
+                            <li>
+                                Ús semàntic: Recorda que
+                                &lt;hr&gt; es pot utilitzar per indicar un
+                                canvi en el contingut o tema dins d'un document, el que
+                                també millora l'accessibilitat.
+                            </li>
+                            <li>
+                                Evita utilitzar
+                                &lt;hr&gt; per finalitats visuals només: Si
+                                necessites una línia només per estil, considera utilitzar CSS
+                                en lloc de l'etiqueta
+                                &lt;hr&gt; per mantenir el document net i
+                                semàntic.
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="template">&lt;template&gt;</h3>
+        <p>
+            L'etiqueta &lt;template&gt; s'utilitza per definir fragments d'HTML reutilitzables que no es mostren
+            immediatament quan la
+            pàgina es carrega. El contingut dins d'un &lt;template&gt; no s'afegeix al document fins que es manipula
+            explícitament amb
+            JavaScript, cosa que permet crear plantilles que es poden clonar i inserir al DOM de manera dinàmica.
+        </p>
+        <p>
+            Aquest element és ideal quan vols tenir estructures HTML preparades que podràs afegir al document en temps
+            real,
+            sense que aquestes siguin rendides o visibles inicialment. Això proporciona molta flexibilitat per a
+            aplicacions
+            dinàmiques.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;template id="mevaPlantilla"&gt;<br>
+                            &lt;div class="producte"&gt;<br>
+                            &lt;h2&gt;Nom del Producte&lt;/h2&gt;<br>
+                            &lt;p&gt;Descripció del producte&lt;/p&gt;<br>
+                            &lt;/div&gt;<br>
+                            &lt;/template&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
+        </center>
+
+        <center>
+            <table border="5" cellpadding="10">
+                <tr>
+                    <td>
+                        <ul>
+                            <li>
+                                Mantingues les plantilles simples i modulars: Organitza el teu codi dins de
+                                &lt;template&gt; de manera que puguis reutilitzar fàcilment aquestes plantilles en
+                                diferents seccions de la pàgina.
+                            <li>
+                                Clona plantilles amb JavaScript: L'etiqueta no renderitza el seu contingut fins
+                                que l'invoques amb JavaScript, la qual cosa et dona control total sobre quan i
+                                com s'ha d'afegir al DOM.
+                            </li>
+                            <li>
+                                Utilitza plantilles per generar contingut dinàmicament: És molt útil en
+                                aplicacions on el contingut ha de ser generat o actualitzat en temps real, com
+                                llistes, formularis o targetes de productes.
+                            </li>
+                            <li>
+                                No incloguis contingut actiu dins del template: Els scripts o altres continguts
+                                interactius dins del template no s'executaran fins que el contingut sigui afegit al
+                                DOM, així que assegura't d'afegir els elements interactius un cop estigui al
+                                document.
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="iframe">&lt;iframe&gt;</h3>
+        <p>
+            &lt;iframe&gt; (inline frame) és una etiqueta HTML que permet inserir una pàgina HTML dins d'una altra
+            pàgina web. És una manera més moderna i segura
+            d'incrustar contingut extern, com altres pàgines web, vídeos, formularis o mapes, dins d'una pàgina
+            principal.
+        </p>
+        <p>
+            Els iframes s'utilitzen sovint per a continguts dinàmics com vídeos de YouTube, Google Maps, o integracions
+            de serveis externs.
+        </p>
+        <p>
+            L'etiqueta &lt;iframe&gt; es defineix dins del cos del document i es pot personalitzar amb atributs com
+            width, height, src, i frameborder.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;iframe width="560" height="315" src="https://www.youtube.com/embed/ID_VIDEO"<br>
+                            frameborder="0" allow="autoplay; encrypted-media" allowfullscreen&gt;&lt;/iframe&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
+        </center>
+
+        <center>
+            <table border="5" cellpadding="10">
+                <tr>
+                    <td>
+                        <ul>
+                            <li>
+                                Evita l'ús excessiu d'iframes: L'ús excessiu d'iframes pot fer que la pàgina sigui més
+                                lenta i més difícil de gestionar.
+                                Utilitza'ls només quan sigui necessari (com per incrustar contingut extern).
+                            <li>
+                                Utilitza l'atribut sandbox per seguretat: Quan incrustes contingut d'altres llocs,
+                                utilitza l'atribut sandbox per
+                                limitar les accions que l'iframe pot realitzar dins del teu lloc web, millorant la
+                                seguretat.
+                            </li>
+                            <li>
+                                Optimitza l'alçada i amplada: Ajusta la mida de l'iframe per assegurar-te que el
+                                contingut es vegi correctament en
+                                totes les mides de pantalla, especialment en dispositius mòbils.
+                            </li>
+                            <li>
+                                Utilitza alternatives quan sigui possible: Quan només necessites carregar contingut
+                                dinàmic que pots generar tu
+                                mateix (com un vídeo o una imatge), considera carregar-ho directament a la pàgina en
+                                lloc d'utilitzar un iframe.
+                            </li>
+                            <li>
+                                Utilitza allowfullscreen per a vídeos: Si estàs incrustant vídeos, permet que es puguin
+                                visualitzar en pantalla
+                                completa amb l'atribut allowfullscreen per millorar l'experiència de l'usuari.
+                            </li>
+                        </ul>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <hr>
+        <span style="font-size: large;">
+            <h2 id="metadades">Metadades en HTML</h2>
+        </span>
+        <ol>
+            <a href="#charset" style="color: black;">
+                <li>Charset</li>
+            </a>
+            <a href="#viewport" style="color: black;">
+                <li>Viewport</li>
+            </a>
+            <a href="#descripcio" style="color: black;">
+                <li>Descripció de la pàgina</li>
+            </a>
+            <a href="#keywords" style="color: black;">
+                <li>Keywords</li>
+            </a>
+            <a href="#autor" style="color: black;">
+                <li>Autor de la pàgina</li>
+            </a>
+            <a href="#robot" style="color: black;">
+                <li>Instruccions per a Robots de Cerca</li>
+            </a>
+            <a href="#ogt" style="color: black;">
+                <li>Open Graph Tags</li>
+            </a>
+            <a href="#mobils" style="color: black;">
+                <li>Metadades per a aplicacions mòbils</li>
+            </a>
+            <a href="#favicon" style="color: black;">
+                <li>Favicon</li>
+            </a>
+            <a href="#lang" style="color: black;">
+                <li>Lang</li>
+            </a>
+        </ol>
+        <p>
+            Les metadades són informació que es col·loca dins del document HTML per descriure característiques del
+            document com l'autor, la
+            descripció, les paraules clau o les instruccions per a motors de cerca i navegadors.
+        </p>
+        <p>
+            Les metadades s'inclouen dins de l'etiqueta &lt;head&gt; del document HTML, però no es mostren directament a
+            la pàgina web. Aquestes dades
+            ajuden els navegadors, motors de cerca, i aplicacions a comprendre millor el contingut de la pàgina.
+        </p>
+        <h3 id="charset">Charset (Conjunt de caràcters)</h3>
+        <p>
+            1. Defineix el conjunt de caràcters utilitzat en el document, com UTF-8, que suporta gairebé tots els
+            caràcters.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;meta charset="UTF-8"&gt;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="viewport">Viewport (Responsive design)</h3>
+        <p>
+            1. Ajuda a configurar la visualització d'una pàgina web en dispositius mòbils, garantint que el contingut
+            s'adapti correctament a diferents
+            mides de pantalla.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="descripcio">Descripció de la pàgina</h3>
+        <p>
+            1. Proporciona una breu descripció del contingut de la pàgina. Aquesta informació és utilitzada pels motors
+            de cerca per mostrar descripcions en els resultats de cerca.
+
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;meta name="description" content="Aquest és un lloc web que ofereix informació sobre
+                            HTML5."&gt;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="keywords">Paraules clau (keywords)</h3>
+        <p>
+            1. Defineix un conjunt de paraules clau que descriuen el contingut de la pàgina. Encara que no és tan
+            utilitzat pels motors de cerca
+            actualment, pot ser útil per altres aplicacions.
+
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;meta name="keywords" content="HTML5, desenvolupament web, CSS, JavaScript"&gt;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="autor">Autor de la pàgina</h3>
+        <p>
+            1. Indica el nom de l'autor o empresa responsable del contingut de la pàgina web.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;meta name="author" content="Jaume Pericàs"&gt;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="robot">Instruccions per a Robots de Cerca</h3>
+        <p>
+            1. Indica als motors de cerca com indexar i rastrejar el contingut de la pàgina.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;meta name="robots" content="index, follow"&gt;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="ogt">Open Graph Tags (per a xarxes socials)</h3>
+        <p>
+            1. Els Open Graph Tags són metadades utilitzades per les xarxes socials (com Facebook o Twitter) per mostrar
+            previsualitzacions
+            personalitzades quan es comparteix un enllaç.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;meta property="og:title" content="Títol de la pàgina"&gt;<br>
+                            &lt;meta property="og:description" content="Descripció de la pàgina"&gt;<br>
+                            &lt;meta property="og:image" content="imatge.jpg"&gt;<br>
+                            &lt;meta property="og:url" content="https://www.exemple.com"&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="mobils">Metadades per a aplicacions mòbils</h3>
+        <p>
+            1. Pots utilitzar metadades per millorar com es veu la pàgina quan es desa a la pantalla d'inici en un
+            dispositiu mòbil.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;link rel="apple-touch-icon" href="icon.png"&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="favicon">Favicon</h3>
+        <p>
+            1. Tot i que no és un &lt;meta&gt;, el favicon és una metadada visual important que es mostra a la pestanya
+            del navegador.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;link rel="icon" href="favicon.ico" type="image/x-icon"&gt;
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <h3 id="lang">Lang (atribut)</h3>
+        <p>
+            1. L'atribut lang es defineix dins de l'etiqueta &lt;html&gt; per especificar l'idioma general de la pàgina,
+            o dins de qualsevol altra etiqueta HTML
+            per marcar un idioma específic dins d'una part del contingut.
+        </p>
+        <center>
+            <h3>Exemple:</h3>
+            <table border="5" cellpadding="15">
+                <tr>
+                    <td>
+                        <p>
+                            &lt;!DOCTYPE html&gt;<br>
+                            &lt;html lang="ca"&gt;<br>
+                            ...<br>
+                            &lt;/html&gt;<br>
+                        </p>
+                    </td>
+                </tr>
+            </table>
+        </center>
+        <br>
+        <center>
+            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
+        </center>
+
+        <center>
+            <table border="5" cellpadding="10">
+                <tr>
+                    <td>
+                        <p>Bones Pràctiques per a l'Ús de Metadades en HTML</p>
+                        <ol>
+                            <li>
+                                Utilitza el conjunt de caràcters UTF-8 per garantir que tots els caràcters
+                                especials es mostrin correctament en tots els dispositius i navegadors.
+                            <li>
+                                Inclou una descripció rellevant de la pàgina per ajudar els motors de cerca
+                                a comprendre millor el contingut i millorar la teva classificació.
+                            </li>
+                            <li>
+                                Optimitza per a mòbils utilitzant l'etiqueta viewport per assegurar que la
+                                pàgina s'adapti correctament a diferents dispositius.
+                            </li>
+                            <li>
+                                Inclou Open Graph Tags si vols que la teva pàgina es mostri de manera
+                                atractiva quan es comparteixi en xarxes socials.
+                            </li>
+                            <li>
+                                Utilitza metadades de robots per controlar com vols que els motors de
+                                cerca indexin o no indexin la teva pàgina.
+                            </li>
+                        </ol>
+                    </td>
+                </tr>
+            </table>
+        </center>
+    </section>
 </body>
 
 </html>
