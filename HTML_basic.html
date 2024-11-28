@@ -20,25 +20,21 @@
 
 <body>
     <header>
-        <center>
-                <h1 id="inici">HTML bàsic</h1>
-        </center>
+        <h1 id="inici">HTML bàsic</h1>
     </header>
     <nav>
-        <a href="#inici" style="color: rgb(0, 0, 0);font-size:medium ; text-decoration: none;">
-            <button style="background-color:rgba(67, 181, 52, 0.689) ; height: 50px; width: 50px; bottom: 10px; right: 10px; position: fixed;">
+        <a href="#inici" class="boto_adalt">
+            <button class="color_boto boto_adalt_recuadre">
                 Adalt
             </button>
         </a>
-        <button style="background-color: rgba(67, 181, 52, 0.689);">
-            <a href="index.html" style="color: rgb(0, 0, 0);font-size:medium ; text-decoration: none;">
+        <button class="color_boto">
+            <a href="index.html" class="tornar">
                 &lt; Tornar a la pàgina principal
             </a>
         </button>
 
-        <span style="color: rgb(5, 5, 70);">
-            <h2>Índex</h2>
-        </span>
+        <h2 class="index">Índex</h2>
         <ol>
             <a href="#introduccio" style="color: black;">
                 <li>Introducció a HTML</li>
@@ -97,7 +93,7 @@
         <hr>
 
         <h2 id="estructura">Estructura Bàsica d’un document HTML</h2>
-        
+
         <h3>Estructura general</h3>
         <ol>
             <li>Un document HTML es basa en una estructura jeràrquica de <b>etiquetes</b> que defineixen les diferents
@@ -106,7 +102,7 @@
                 etiquetes &lthtml&gt, &lthead&gt, &ltbody&gt.</li>
         </ol>
 
-        <center>
+        <div class="div_centrat">
             <h3>Exemple:</h3>
             <table border="5" cellpadding="15">
                 <tr>
@@ -123,7 +119,7 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
         <hr>
 
@@ -152,7 +148,7 @@
             Inserta un espai en blanc que no es trenca entre línies.
         </p>
 
-        <center>
+        <div class="div_centrat">
             <h3>Exemple:</h3>
             <table border="5" cellpadding="15">
                 <tr>
@@ -179,7 +175,7 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
         <hr>
 
@@ -199,7 +195,7 @@
             </li>
         </ul>
 
-        <center>
+        <div class="div_centrat">
             <h3>Exemple:</h3>
             <table border="5" cellpadding="12">
                 <tr>
@@ -210,7 +206,7 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
 
         <h3>Element:</h3>
         <ul>
@@ -224,9 +220,9 @@
             </li>
         </ul>
 
-        <center>
+        <div class="div_centrat">
             <h3>Exemple:</h3>
-            <table border="5"cellpadding="12">
+            <table border="5" cellpadding="12">
                 <tr>
                     <td>
                         <p>
@@ -235,7 +231,7 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
 
         <h3>Elements anidats</h3>
         <ul>
@@ -251,7 +247,7 @@
             </li>
         </ul>
 
-        <center>
+        <div class="div_centrat">
             <h3>Exemple:</h3>
             <table border="5" cellpadding="15">
                 <tr>
@@ -278,7 +274,7 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
         <hr>
 
@@ -290,7 +286,7 @@
             el format <b>nom="valor"</b>.
         </p>
 
-        <center>
+        <div class="div_centrat">
             <h3>Exemple:</h3>
             <table border="5" cellpadding="15">
                 <tr>
@@ -317,7 +313,7 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
         <hr>
 
@@ -359,7 +355,7 @@
             H<sub>2</sub>O
         </p>
 
-        <center>
+        <div class="div_centrat">
             <h3>Exemple:</h3>
             <table border="5" cellpadding="15">
                 <tr>
@@ -389,7 +385,7 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
         <hr>
 
@@ -409,7 +405,7 @@
             </li>
         </ul>
 
-        <center>
+        <div class="div_centrat">
             <h3>Exemple:</h3>
             <table border="5" cellpadding="15">
                 <tr>
@@ -429,13 +425,13 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
-        <center>
-            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
-        </center>
+        <div class="div_centrat">
+            <h3 class="important">IMPORTNAT</h3>
+        </div>
 
-        <center>
+        <div class="div_centrat">
             <table border="5" cellpadding="10">
                 <tr>
                     <td>
@@ -458,12 +454,12 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
         <hr>
 
         <h2 id="imatges">Inserció d'imatges</h2>
- 
+
         <ul>
             <li>
                 L'etiqueta <b>&lt;img&gt;</b> s'utilitza per inserir imatges en una pàgina web.
@@ -523,7 +519,7 @@
             </li>
         </ul>
 
-        <center>
+        <div class="div_centrat">
             <h3>Exemple:</h3>
             <table border="5" cellpadding="15">
                 <tr>
@@ -537,13 +533,13 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
-        <center>
-            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
-        </center>
+        <div class="div_centrat">
+            <h3 class="important">IMPORTNAT</h3>
+        </div>
 
-        <center>
+        <div class="div_centrat">
             <table border="5" cellpadding="10">
                 <tr>
                     <td>
@@ -565,7 +561,7 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
         <hr>
 
@@ -625,7 +621,7 @@
             </ul>
         </ul>
 
-        <center>
+        <div class="div_centrat">
             <h3>Exemple:</h3>
             <table border="5" cellpadding="15">
                 <tr>
@@ -641,13 +637,13 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
-        <center>
-            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
-        </center>
+        <div class="div_centrat">
+            <h3 class="important">IMPORTNAT</h3>
+        </div>
 
-        <center>
+        <div class="div_centrat">
             <table border="5" cellpadding="10">
                 <tr>
                     <td>
@@ -677,7 +673,7 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
         <hr>
 
@@ -696,7 +692,7 @@
                 Cada element de la llista es defineix amb l’etiqueta &lt;li&gt; (list item).
             </li>
         </ol>
-        <center>
+        <div class="div_centrat">
             <h3>Exemple:</h3>
             <table border="5" cellpadding="15">
                 <tr>
@@ -711,7 +707,7 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
         <h3>Llistes ordenades (&lt;ol&gt;)</h3>
 
@@ -726,7 +722,7 @@
                 Cada element de la llista també es defineix amb &lt;li&gt;.
             </li>
         </ol>
-        <center>
+        <div class="div_centrat">
             <h3>Exemple:</h3>
             <table border="5" cellpadding="15">
                 <tr>
@@ -741,7 +737,7 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
 
         <h3>Atributs de llistes:</h3>
@@ -782,7 +778,7 @@
             </ul>
         </ol>
 
-        <center>
+        <div class="div_centrat">
             <h3>Exemple:</h3>
             <table border="5" cellpadding="15">
                 <tr>
@@ -801,13 +797,13 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
-        <center>
-            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
-        </center>
+        <div class="div_centrat">
+            <h3 class="important">IMPORTNAT</h3>
+        </div>
 
-        <center>
+        <div class="div_centrat">
             <table border="5" cellpadding="10">
                 <tr>
                     <td>
@@ -827,7 +823,7 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
         <hr>
 
@@ -853,7 +849,7 @@
                 Crea una cel·la dins d’una fila de la taula (dades de la taula).
             </li>
         </ul>
-        <center>
+        <div class="div_centrat">
             <h3>Exemple:</h3>
             <table border="5" cellpadding="15">
                 <tr>
@@ -873,7 +869,7 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
 
         <h3>Atributs de Taula:</h3>
@@ -905,7 +901,7 @@
             </ul>
         </ol>
 
-        <center>
+        <div class="div_centrat">
             <h3>Exemple:</h3>
             <table border="5" cellpadding="15">
                 <tr>
@@ -929,7 +925,7 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
 
         <h3>Etiqueta &lt;thead&gt; (table head):</h3>
@@ -959,7 +955,7 @@
             </li>
         </ul>
 
-        <center>
+        <div class="div_centrat">
             <h3>Exemple:</h3>
             <table border="5" cellpadding="15">
                 <tr>
@@ -987,13 +983,13 @@
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
         <br>
-        <center>
-            <h3 style="color: red; font-size:xx-large;">IMPORTNAT</h3>
-        </center>
+        <div class="div_centrat">
+            <h3 class="important">IMPORTNAT</h3>
+        </div>
 
-        <center>
+        <div class="div_centrat">
             <table border="5" cellpadding="10">
                 <tr>
                     <td>
@@ -1006,14 +1002,16 @@
 
                             </li>
                             <li>
-                                Mantingues les taules simples per a dades tabulades i utilitza CSS per al disseny més <br>
+                                Mantingues les taules simples per a dades tabulades i utilitza CSS per al disseny més
+                                <br>
                                 avançat de les taules (colors, mida de la font, etc.).
                             </li>
                         </ol>
                     </td>
                 </tr>
             </table>
-        </center>
+        </div>
     </section>
 </body>
+
 </html>

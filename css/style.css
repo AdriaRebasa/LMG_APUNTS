@@ -1,15 +1,86 @@
+:root {
+    --colorboto: rgba(73, 166, 61, 0.6);
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 10px;
+}
+
 h2 {
-    font-size: large;
+    font-size: 30px;
 }
 
 body {
     background-color: rgb(233, 239, 167);
 }
 
-h1{
+h1 {
     color: rgb(15, 136, 229);
+    font-size: 50px;
 }
 
-linkblau{
+.linkblau {
     color: darkblue;
+}
+
+.boto_adalt {
+    color: black;
+    font-size: medium;
+    text-decoration: none;
+}
+
+.boto_adalt_recuadre {
+    height: 50px;
+    width: 50px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transition: scale 0.4s ease;
+}
+
+.boto_adalt_recuadre:hover {
+    opacity: 1;
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.color_boto {
+    background-color: var(--colorboto);
+    transition: scale 0.4s ease;
+}
+
+.tornar {
+    color: rgb(0, 0, 0);
+    font-size: medium;
+    text-decoration: none;
+}
+
+.color_boto:hover {
+    opacity: 1;
+    scale: 1.06;
+    cursor: pointer;
+}
+
+.index {
+    color: rgb(5, 5, 70);
+    font-size: 30px;
+}
+
+.div_centrat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.important{
+    color: red; 
+    font-size:xx-large;
 }
