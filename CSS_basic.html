@@ -130,6 +130,156 @@
             </p>
         </ol>
 
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                <p style="color: red; font-size: 20px;">Aquest és un paràgraf amb estils en línia.</p>
+                <hr>
+                &lt;p style="color: red; font-size: 20px;"&gt;Aquest és un paràgraf amb estils en línia.&lt;/p&gt; <br>
+            </div>
+        </div>
+
+        <ol>
+            <h3>
+                Avantatges
+            </h3>
+            <li>
+                Aplicació ràpida i directa a l'element
+            </li>
+
+        </ol>
+        <ol>
+            <h3>
+                Inconvenients
+            </h3>
+            <li>
+                Dificulta la mantenibilitat en llocs webs grans perque caldria aplicar l'estil a cada element
+                manualment.
+            </li>
+            <li>
+                No aprofita la capacitat de reutilitzar els estils.
+            </li>
+        </ol>
+
+        <h3>
+            2. Estils incrustats(Embedded styles)
+        </h3>
+        <p>
+            Els estils incrustats es col·loquen dins de la secció &lt;head&gt; d’un document HTML, dins d’una etiqueta
+            &lt;style&gt;. Aquests estils s'apliquen a tots els elements HTML de la pàgina actual.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                <div>
+                    <h3 class="ex1">
+                        Aquest és un títol centrat
+                    </h3>
+                    <p class="ex2">
+                        Aquest paràgraf tindrà text de color blau i mida 18 píxels.
+                    </p>
+                </div>
+                <hr>
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html lang="ca"&gt;<br>
+                &lt;head&gt;<br>
+                &lt;meta charset="UTF-8"&gt;<br>
+                &lt;title&gt;Estils incrustats&lt;/title&gt;<br>
+                &lt;style&gt;<br>
+                p {<br>
+                color: blue;<br>
+                font-size: 18px;<br>
+                }<br>
+                h1 {<br>
+                text-align: center;<br>
+                }<br>
+                &lt;/style&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &lt;h1&gt;Aquest és un títol centrat&lt;/h1&gt;<br>
+                &lt;p&gt;Aquest paràgraf tindrà text de color blau i mida 18 píxels.&lt;/p&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </div>
+        </div>
+        <ol>
+            <h3>
+                Avantatges
+            </h3>
+            <li>
+                Més eficient que els estils en línia, ja que es poden aplicar estils a diversos elements d'una mateixa
+                pàgina des d'un sol lloc.
+            </li>
+
+        </ol>
+        <ol>
+            <h3>
+                Inconvenients
+            </h3>
+            <li>
+                Només afecta la pàgina on s’aplica, no es reutilitza entre diverses pàgines.
+            </li>
+            <li>
+                Si la pàgina creix massa, pot fer més difícil la lectura i manteniment.
+            </li>
+        </ol>
+
+        <h3>
+            3. Estils esterns (External stylesheets)
+        </h3>
+        <p>
+            Els estils externs s’emmagatzemen en un fitxer CSS separat, i s’enllacen al document HTML utilitzant
+            l'etiqueta &lt;link&gt; dins de la secció &lt;head&gt;. Aquest és el mètode més recomanat per a la majoria
+            de llocs webs, especialment si consten de múltiples pàgines.
+        </p>
+
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="div_centrat_fila">
+                <div class="capsa">
+                    <div>
+                        <h3 class="ex4">
+                            Benvinguts al meu lloc web
+                        </h3>
+                        <p class="ex3">
+                            Aquest paràgraf tindrà text verd i mida 16 píxels.
+                        </p>
+                    </div>
+                    <hr>
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="ca"&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;title&gt;Estils externs&lt;/title&gt;<br>
+                    &lt;link rel="stylesheet" href="style.css"&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;h1&gt;Benvinguts al meu lloc web&lt;/h1&gt;<br>
+                    &lt;p&gt;Aquest paràgraf tindrà text verd i mida 16 píxels.&lt;/p&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                </div>
+                <div class="capsa">
+                    p {<br>
+                        color: green;<br>
+                        font-size: 16px;<br>
+                    }<br>
+                    h1 {<br>
+                        text-align: center;<br>
+                        color: darkblue;<br>
+                    }<br>
+                </div>
+            </div>
+        </div>
+
+        
+            
+        
+
+
+
+
+
 
     </section>
 

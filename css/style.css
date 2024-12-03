@@ -6,7 +6,7 @@ html {
     scroll-behavior: smooth;
 }
 
-header{
+header {
     display: flex;
     align-items: center;
     justify-content: center;
@@ -73,18 +73,51 @@ h1 {
     font-size: 30px;
 }
 
-.div_centrat{
+.div_centrat {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
 }
 
-.important{
-    color: red; 
-    font-size:xx-large;
+.important {
+    color: red;
+    font-size: xx-large;
 }
 
-.negre{
+.negre {
     color: black;
+}
+
+.capsa {
+    border: solid;
+    border-width: 3px;
+    padding: 7px;
+    margin: 7px;
+}
+
+.ex1 {
+    text-align: center;
+}
+
+.ex2 {
+    color: blue;
+    font-size: 18px;
+}
+
+.ex3 {
+    color: green;
+    font-size: 16px;
+}
+
+.ex4 {
+    text-align: center;
+    color: darkblue;
+}
+
+.div_centrat_fila {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
 }
