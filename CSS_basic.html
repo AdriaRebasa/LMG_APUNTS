@@ -348,6 +348,7 @@
             tipus. Aquest codi aplicarà el color verd a tots els títols (&lt;h1&gt;) de la pàgina.
         </p>
         <div class="div_centrat">
+            <h3>Exemple:</h3>
             <div class="capsa">
                 h1 { <br>
                 color: green; <br>
@@ -386,6 +387,7 @@
         </p>
 
         <div class="div_centrat">
+            <h3>Exemple:</h3>
             <div class="capsa">
                 #mi-id { <br>
                 text-align: center; <br>
@@ -401,6 +403,7 @@
         </p>
 
         <div class="div_centrat">
+            <h3>Exemple:</h3>
             <div class="capsa">
                 * { <br>
                 margin: 0; <br>
@@ -476,6 +479,7 @@
             contingut.
         </p>
         <div class="div_centrat">
+            <h3>Exemple:</h3>
             <div class="capsa ex5">
                 p { <br>
                 font-family: "Arial", sans-serif; <br>
@@ -488,6 +492,7 @@
             diverses unitats, com píxels (px), ems (em), punts (pt), o percentatges (%).
         </p>
         <div class="div_centrat">
+            <h3>Exemple:</h3>
             <div class="capsa ex5">
                 h1 { <br>
                 font-size: 32px; <br>
@@ -504,6 +509,7 @@
             predefinits, valors en hexadecimal, o el sistema de colors RGB o RGBA.
         </p>
         <div class="div_centrat">
+            <h3>Exemple:</h3>
             <div class="capsa ex5">
                 p { <br>
                 color: red; /* Amb nom de color */ <br>
@@ -523,6 +529,7 @@
             (centrat) i justify (justificat).
         </p>
         <div class="div_centrat">
+            <h3>Exemple:</h3>
             <div class="capsa ex6">
                 h1 { <br>
                 text-align: center; <br>
@@ -546,6 +553,7 @@
             </li>
         </ul>
         <div class="div_centrat">
+            <h3>Exemple:</h3>
             <div class="capsa ex7">
                 p { <br>
                 font-weight: bold; <br>
@@ -567,6 +575,7 @@
             </li>
         </ul>
         <div class="div_centrat">
+            <h3>Exemple:</h3>
             <div class="capsa ex8">
                 span { <br>
                 font-style: italic; <br>
@@ -594,6 +603,7 @@
             alhora.
         </p>
         <div class="div_centrat">
+            <h3>Exemple:</h3>
             <div class="capsa">
                 p { <br>
                 margin: 10px; /* Aplica un marge de 10 píxels a tots els costats */ <br>
@@ -615,6 +625,7 @@
             individualment.
         </p>
         <div class="div_centrat">
+            <h3>Exemple:</h3>
             <div class="capsa">
                 div { <br>
                 padding: 20px; /* Aplica un farcit de 20 píxels a tots els costats */ <br>
@@ -642,6 +653,7 @@
             </li>
         </ol>
         <div class="div_centrat">
+            <h3>Exemple:</h3>
             <div class="capsa">
                 div { <br>
                 border: 2px solid black; /* Vora de 2 píxels, sòlida i negra */ <br>
@@ -721,6 +733,7 @@
             </ol>
         </ol>
         <div class="div_centrat">
+            <h3>Exemple:</h3>
             <div class="capsa">
                 &lt;!DOCTYPE html&gt;<br>
                 &lt;html lang="ca"&gt;<br>
@@ -754,7 +767,196 @@
     </section>
     <hr>
     <section>
-        
+        <h2 id="colors">Colors i fons en CSS</h2>
+
+        <p>
+            El CSS proporciona diverses propietats per aplicar colors i fons als elements HTML. Aquestes propietats són
+            essencials
+            per millorar l'aspecte visual i la llegibilitat de la pàgina web.
+        </p>
+        <h3>1. Popietat color</h3>
+        <ol>
+            La propietat color s’utilitza per canviar el color del text dins d’un
+            element. Pots definir els colors de diverses maneres:
+            <li>
+                <b>Noms de colors:</b> utilitzar noms predefinits com red, blue,
+                green, etc.
+            </li>
+            <li>
+                <b>Colors hexadecimals:</b> utilitzar un codi hexadecimal que
+                comença amb # seguit de sis caràcters (exemple: #FF0000
+                per a vermell).
+            </li>
+            <li>
+                <b>RGB:</b> utilitzar un codi hexadecimal que
+                comença amb # seguit de sis caràcters (exemple: #FF0000
+                per a vermell).
+            </li>
+            <li>
+                <b>RGBA:</b> igual que rgb(), però amb un quart valor per a l'opacitat
+                (valors entre 0.0 i 1.0).
+            </li>
+        </ol>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                p { <br>
+                color: blue; /* Utilitza un nom de color */ <br>
+                } <br>
+                h1 { <br>
+                color: #FF5733; /* Utilitza un codi hexadecimal */ <br>
+                } <br>
+                span { <br>
+                color: rgb(0, 255, 0); /* Utilitza el sistema RGB */ <br>
+                } <br>
+                div { <br>
+                color: rgba(0, 0, 255, 0.5); /* Utilitza el sistema RGBA amb opacitat */ <br>
+                } <br>
+            </div>
+        </div>
+        <h3>2. Propietat background-color</h3>
+        <p>
+            La propietat background-color s’utilitza per establir el color de fons
+            d’un element. Igual que la propietat color, pots definir colors
+            utilitzant noms, valors hexadecimals, RGB o RGBA.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                body { <br>
+                background-color: lightgray; /* Color de fons gris clar */ <br>
+                } <br>
+                div { <br>
+                background-color: #00FF00; /* Color de fons verd */ <br>
+                } <br>
+            </div>
+        </div>
+
+        <h3>3. Propietat background</h3>
+        <p>
+            La propietat background és una manera abreujada d’especificar
+            diverses propietats de fons alhora, com el color, la imatge de
+            fons, la repetició, la posició, etc.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                div { <br>
+                background: lightblue url("fons.jpg") no-repeat center cover; <br>
+                } <br>
+            </div>
+        </div>
+        <h3>4. Propietat background-image</h3>
+        <p>
+            Aquesta propietat permet afegir una imatge com a fons d'un
+            element. Pots especificar la ubicació de la imatge amb una URL.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                div { <br>
+                background-image: url("imatge-de-fons.jpg"); <br>
+                } <br>
+            </div>
+        </div>
+        <p>
+            Si vols que la imatge es repeteixi o es mostri d'una altra manera,
+            pots utilitzar altres propietats complementàries:
+        </p>
+        <ol>
+            <li>
+                <b>background-repeat:</b> Controla si la imatge de fons es repeteix.
+                Els valors poden ser repeat, no-repeat, repeat-x
+                (horitzontalment) o repeat-y (verticalment).
+            </li>
+            <li>
+                <b>background-position:</b> Defineix la posició de la imatge de fons
+                (per exemple, center, top, left).
+            </li>
+            <li>
+                <b>background-size:</b> Permet ajustar la mida de la imatge (per
+                exemple, cover o contain per adaptar-se a la mida de
+                l'element).
+            </li>
+        </ol>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                div { <br>
+                background-image: url("fons.jpg"); <br>
+                background-repeat: no-repeat; <br>
+                background-position: center; <br>
+                background-size: cover; <br>
+                } <br>
+            </div>
+        </div>
+        <h3>Resum de les propietats vistes:</h3>
+        <ol>
+            <li>
+                <b>color:</b> defineix el color del text.
+            </li>
+            <li>
+                <b>background-color:</b> afegeix una imatge de fons a un element.
+            </li>
+            <li>
+                <b>background-repeat:</b> controla la repeticio de la imatge de fons.
+            </li>
+            <li>
+                <b>background-position:</b> defineix la posició de la imatge de fons.
+            </li>
+            <li>
+                <b>background-size:</b> ajusta la mida de la iatge de fons.
+            </li>
+            <li>
+                <b>background:</b> propietat abreujada que combina diverses propietats de fons.
+            </li>
+        </ol>
+        <div class="div_centrat_fila">
+            <div class="div_centrat">
+                <h3>Exemple:</h3>
+                <div class="capsa">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="ca"&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                    &lt;title&gt;Colors i Fons en CSS&lt;/title&gt;<br>
+                    &lt;style&gt;<br>
+                    body {<br>
+                    background-color: lightgray; /* Color de fons del cos de la pàgina */<br>
+                    }<br>
+                    h1 {<br>
+                    color: darkblue; /* Color del text del títol */<br>
+                    }<br>
+                    p {<br>
+                    color: #333; /* Color de text amb codi hexadecimal */<br>
+                    background-color: #FFD700; /* Fons groc daurat */<br>
+                    }<br>
+                    .fons-imatge {<br>
+                    background-image: url("fons.jpg");<br>
+                    background-repeat: no-repeat;<br>
+                    background-position: center;<br>
+                    background-size: cover;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;h1&gt;Colors i Fons en CSS&lt;/h1&gt;<br>
+                    &lt;p&gt;Aquest és un paràgraf amb text de color gris fosc i fons groc daurat.&lt;/p&gt;<br>
+                    &lt;div class="fons-imatge" style="height: 200px;"&gt;<br>
+                    Aquest div té una imatge de fons.<br>
+                    &lt;/div&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                </div>
+            </div>
+            <div class="div_centrat">
+                <div class="capsa fons-imatge">
+
+                </div>
+            </div>
+        </div>
+
     </section>
 
 </body>
