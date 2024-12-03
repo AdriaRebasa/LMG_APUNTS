@@ -46,25 +46,25 @@
             <a href="#sintaxi" class="negre">
                 <li>Sintaxi bàsica del CSS</li>
             </a>
-            <a href="#" class="negre">
+            <a href="#propietats" class="negre">
                 <li>Propietats de text i fonts</li>
             </a>
-            <a href="#" class="negre">
+            <a href="#marges" class="negre">
                 <li>Marges, farcits i vores</li>
             </a>
-            <a href="#" class="negre">
+            <a href="#colors" class="negre">
                 <li>Colors i fons</li>
             </a>
-            <a href="#" class="negre">
+            <a href="#dimensions" class="negre">
                 <li>Dimensions i caixes</li>
             </a>
-            <a href="#" class="negre">
+            <a href="#posicionament" class="negre">
                 <li>Posicionament bàsic</li>
             </a>
-            <a href="#" class="negre">
+            <a href="#flexbox" class="negre">
                 <li>Disseny bàsic amb Flexbox</li>
             </a>
-            <a href="#" class="negre">
+            <a href="#media" class="negre">
                 <li>Media Queries (Introducció)</li>
             </a>
 
@@ -113,6 +113,7 @@
             </li>
         </ol>
     </section>
+    <hr>
     <section>
         <h2 id="aplicacio">Aplicació d'estils</h2>
         <p>
@@ -297,7 +298,9 @@
                 fitxers CSS.
             </li>
         </ol>
-
+    </section>
+    <hr>
+    <section>
 
         <h2 id="sintaxi"> Sintaxi bàsica del CSS</h2>
 
@@ -410,13 +413,13 @@
 
 
         <div class="grid6">
-            <div class="div1 div_centrat"> 
+            <div class="div1 div_centrat">
                 <h3>Herència</h3>
                 <p>
                     Els fills hereden els estils dels seus pares, aixi no cal que escriguis estils per tot.
                 </p>
             </div>
-            <div class="div2"> 
+            <div class="div2">
                 <h3>Especificitat</h3>
                 <p>
                     Quan hi ha conflictes d'estils, el navegador aplica només el de més especifitat.
@@ -426,35 +429,170 @@
                 <h3>Cascada</h3>
                 <p>
                     Tot estil sobreescriu un d'anterior. La C de CSS significa Cascada.
-                </p> 
+                </p>
             </div>
             <div class="div4 capsa">
                 body { <br>
-                    color: blue; <br>
-                    } <br>
-                    h1{ <br>
-                    color:blue; <br>
-                    } <br>
+                color: blue; <br>
+                } <br>
+                h1{ <br>
+                color:blue; <br>
+                } <br>
             </div>
-            <div class="div5 capsa"> 
+            <div class="div5 capsa">
                 .parrafo { <br>
-                    color: blue; <br>
-                    } <br> 
-                    .article .parrafo{ <br>
-                    color:red; <br>
-                    } <br>
+                color: blue; <br>
+                } <br>
+                .article .parrafo{ <br>
+                color:red; <br>
+                } <br>
             </div>
             <div class="div6 capsa">
                 .parrafo { <br>
-                    color: blue;b <br>
-                    } <br>
-                    .parrafo{ <br> 
-                    color:red; <br>
+                color: blue;b <br>
+                } <br>
+                .parrafo{ <br>
+                color:red; <br>
+                } <br>
+            </div>
+        </div>
+
+    </section>
+    <hr>
+    <section>
+        <h2 id="propietats"> Propietats de text i fons</h2>
+        <p>
+            El CSS permet controlar com es mostren els textos dins d’una pàgina web. Amb diverses propietats, podem
+            canviar la
+            font, el color, l'alineació, la mida del text, i altres aspectes visuals per tal de millorar la llegibilitat
+            i l'estètica del
+            contingut.
+        </p>
+        <h3>1. Popietat font-family</h3>
+        <p>El CSS permet controlar com es mostren els textos dins d’una pàgina web. Amb diverses propietats, podem
+            canviar la
+            font, el color, l'alineació, la mida del text, i altres aspectes visuals per tal de millorar la llegibilitat
+            i l'estètica del
+            contingut.
+        </p>
+        <div class="div_centrat">
+            <div class="capsa ex5">
+                p { <br>
+                font-family: "Arial", sans-serif; <br>
+                } <br>
+            </div>
+        </div>
+        <h3>2. Propietat font-size</h3>
+        <p>
+            La propietat font-size controla la mida de la lletra. Els valors es poden definir en
+            diverses unitats, com píxels (px), ems (em), punts (pt), o percentatges (%).
+        </p>
+        <div class="div_centrat">
+            <div class="capsa ex5">
+                h1 { <br>
+                font-size: 32px; <br>
+                } <br>
+                p { <br>
+                font-size: 14px; <br>
+                } <br>
+            </div>
+        </div>
+
+        <h3> 3. Propietat color</h3>
+        <p>
+            La propietat color defineix el color del text. Es poden utilitzar noms de colors
+            predefinits, valors en hexadecimal, o el sistema de colors RGB o RGBA.
+        </p>
+        <div class="div_centrat">
+            <div class="capsa ex5">
+                p { <br>
+                color: red; /* Amb nom de color */ <br>
+                } <br>
+                h1 { <br>
+                color: #00FF00; /* Amb codi hexadecimal */ <br>
+                } <br>
+                span { <br>
+                color: rgb(0, 0, 255); /* Amb codi RGB */ <br>
+                } <br>
+            </div>
+        </div>
+        <h3>4. Propietat text-align</h3>
+        <p>
+            La propietat text-align s'utilitza per controlar l'alineació del text dins d'un
+            element. Els valors més comuns són left (esquerra), right (dreta), center
+            (centrat) i justify (justificat).
+        </p>
+        <div class="div_centrat">
+            <div class="capsa ex6">
+                h1 { <br>
+                text-align: center; <br>
+                } <br>
+                p { <br>
+                text-align: justify; <br>
+                } <br>
+            </div>
+        </div>
+        <h3>5. Propietat font-weight</h3>
+        <ul>
+            La propietat font-weight controla el gruix de la lletra. Els valors comuns són:
+            <li>
+                normal: per defecte
+            </li>
+            <li>
+                bold: text en negreta
+            </li>
+            <li>
+                Números entre 100 i 900, on 400 és el valor per defecte i 700 representa negreta.
+            </li>
+        </ul>
+        <div class="div_centrat">
+            <div class="capsa ex7">
+                p { <br>
+                font-weight: bold; <br>
+                } <br>
+            </div>
+        </div>
+        <h3>6. Propietat font-style</h3>
+        <ul>
+            La propietat font-style controla l'estil de la font, com si el text serà normal o en cursiva.
+            Els valors més comuns són:
+            <li>
+                normal: text normal
+            </li>
+            <li>
+                italic: text en cursiva
+            </li>
+            <li>
+                oblique: text inclinat
+            </li>
+        </ul>
+        <div class="div_centrat">
+            <div class="capsa ex8">
+                span { <br>
+                    font-style: italic; <br>
                     } <br>
             </div>
         </div>
 
+    </section>
+    <hr>
+    <section>
+        <h2 id="marges">Màrges, farcits i vores en CSS</h2>
 
+        <p>
+            Els marges (margin), els farcits (padding) i les vores (border) són part del model de caixa en CSS, que
+            descriu com es disposen els elements en la pàgina. Aquestes propietats permeten ajustar l'espai exterior i
+            interior d'un
+            element, així com definir-ne els límits visuals amb una vora.
+        </p>
+
+        <h3>1. Marges (margin)</h3>
+        <p>
+            La propietat margin controla l'espai exterior d'un element, és a dir, l'espai que hi ha entre un element i
+            els altres elements que l’envolten. Els marges es poden definir de manera individual per a cadascun dels
+            quatre costats de l'element (superior, dret, inferior, esquerre) o de manera global per a tots els costats
+            alhora.
+        </p>
     </section>
 
 </body>

@@ -175,3 +175,19 @@ h1 {
 .div6 {
     grid-area: 2 / 3 / 3 / 4;
 }
+
+.ex5{
+    font-family: "Arial", sans-serif;
+}
+
+.ex6{
+    text-align: center;
+}
+
+.ex7{
+    font-weight: bold;
+}
+
+.ex8{
+    font-style: italic;
+}
