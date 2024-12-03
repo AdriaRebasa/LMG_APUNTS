@@ -20,7 +20,7 @@
 
 <body>
     <header>
-        <h1>CSS Bàsic</h1>
+        <h1 id="inici">CSS Bàsic</h1>
     </header>
 
     <nav>
@@ -43,7 +43,7 @@
             <a href="#aplicacio" class="negre">
                 <li>Aplicació d'estils</li>
             </a>
-            <a href="#" class="negre">
+            <a href="#sintaxi" class="negre">
                 <li>Sintaxi bàsica del CSS</li>
             </a>
             <a href="#" class="negre">
@@ -261,24 +261,150 @@
                 </div>
                 <div class="capsa">
                     p {<br>
-                        color: green;<br>
-                        font-size: 16px;<br>
+                    color: green;<br>
+                    font-size: 16px;<br>
                     }<br>
                     h1 {<br>
-                        text-align: center;<br>
-                        color: darkblue;<br>
+                    text-align: center;<br>
+                    color: darkblue;<br>
                     }<br>
                 </div>
             </div>
         </div>
 
-        
-            
-        
+        <ol>
+            <h3>
+                Inconvenients
+            </h3>
+            <li>
+                Si el fitxer CSS extern no es carrega correctament (per problemes de connexió o d’enllaç), la pàgina es
+                mostrarà sense estils.
+            </li>
+
+        </ol>
+        <ol>
+            <h3>
+                Avantatges
+            </h3>
+            <li>
+                Permet reutilitzar els estils en diverses pàgines web, facilitant la consistència i mantenibilitat.
+            </li>
+            <li>
+                Facilita la separació entre el contingut (HTML) i l’estil (CSS).
+            </li>
+            <li>
+                Optimitza el temps de càrrega del lloc web, ja que els navegadors poden emmagatzemar en memòria cau els
+                fitxers CSS.
+            </li>
+        </ol>
 
 
+        <h2 id="sintaxi"> Sintaxi bàsica del CSS</h2>
 
+        <div class="div_centrat_fila">
+            <div>
+                <img src="imatges/sintaxi.png" alt="Sintaxi bàsica del CSS">
+            </div>
+            <div>
+                <ol>
+                    <li>
+                        <b>Regla CSS</b> és una instrucció que defineix com s'ha d'aplicar un estil a un o més elements
+                        HTML dins d'una pàgina web.
+                    </li>
+                    <li>
+                        <b>Selector</b> Indica l'element HTML al qual s'aplicaran els estils.
+                    </li>
+                    <li>
+                        <b>Propietat</b> Defineix la característica que vols modificar (com ara el color, la mida del
+                        text, el marge, etc.).
+                    </li>
+                    <li>
+                        <b>Valor</b> Assigna un valor específic a la propietat (com ara "blau" per al color, "16px" per
+                        a la mida del text, etc.).
+                    </li>
+                    <li>
+                        <b>Declaració CSS</b> és una instrucció dins d'una regla CSS que defineix una característica
+                        específica d'estil per a un element HTML.
+                    </li>
+                </ol>
+            </div>
+        </div>
 
+        <h2>Selectors en CSS</h2>
+
+        <p>
+            Els selectors són una part fonamental del CSS perquè defineixen quins elements HTML seran afectats per les
+            regles d'estil. Hi ha diversos tipus de selectors, però els més comuns en l'aprenentatge bàsic són:
+        </p>
+
+        <h3>
+            1. Selector de tipus (Type Selector)
+        </h3>
+        <p>
+            Aquest selector aplica estils a tots els elements HTML del mateix
+            tipus. Aquest codi aplicarà el color verd a tots els títols (&lt;h1&gt;) de la pàgina.
+        </p>
+        <div class="div_centrat">
+            <div class="capsa">
+                h1 { <br>
+                color: green; <br>
+                } <br>
+            </div>
+
+        </div>
+        <h3>
+            2. Selector de classe (Class Selector)
+        </h3>
+        <p>
+            Els selectors de classe permeten aplicar estils a elements HTML amb una classe específica. S’utilitza un
+            punt (.) per seleccionar una classe. Qualsevol element HTML que tingui l'atribut class="mi-
+            classe" tindrà un fons groc. Per exemple:
+        </p>
+        <div class="div_centrat_fila">
+            <div class="capsa">
+                .mi-classe {<br>
+                background-color: yellow;<br>
+                } <br>
+            </div>
+            <div class="capsa">
+                &lt;p class="mi-classe"&gt;Aquest paràgraf tindrà un fons groc.&lt;\p&gt;
+            </div>
+        </div>
+
+        <h3>
+            3. Selector d'id (ID Selector)
+        </h3>
+        <p>
+            El selector d’id s’utilitza per aplicar estils a un únic element HTML
+            que tingui un identificador específic. Es fa servir el símbol de la
+            coixinera #. Aquest exemple centrarà el text de l’element que tingui
+            id="mi-id". És important recordar que un ID ha de ser únic a la
+            pàgina.
+        </p>
+
+        <div class="div_centrat">
+            <div class="capsa">
+                #mi-id { <br>
+                text-align: center; <br>
+                } <br>
+            </div>
+        </div>
+
+        <h3>4. Selector universal</h3>
+        <p>
+            El selector universal (*) aplica estils a tots els elements d’una
+            pàgina. Aquest exemple elimina els marges i farcits de tots els
+            elements de la pàgina, cosa útil per establir un estil uniforme.
+        </p>
+
+        <div class="div_centrat">
+            <div class="capsa">
+                * { <br>
+                margin: 0; <br>
+                padding: 0; <br>
+                } <br>
+            </div>
+        </div>
 
 
     </section>
