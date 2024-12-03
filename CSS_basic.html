@@ -569,8 +569,8 @@
         <div class="div_centrat">
             <div class="capsa ex8">
                 span { <br>
-                    font-style: italic; <br>
-                    } <br>
+                font-style: italic; <br>
+                } <br>
             </div>
         </div>
 
@@ -593,6 +593,168 @@
             quatre costats de l'element (superior, dret, inferior, esquerre) o de manera global per a tots els costats
             alhora.
         </p>
+        <div class="div_centrat">
+            <div class="capsa">
+                p { <br>
+                margin: 10px; /* Aplica un marge de 10 píxels a tots els costats */ <br>
+                } <br>
+                h1 { <br>
+                margin-top: 20px; /* Marge superior de 20 píxels */ <br>
+                margin-bottom: 10px; /* Marge inferior de 10 píxels */ <br>
+                margin-left: 10px; /* Marge esquerra de 10 píxels */ <br>
+                margin-right: 10px; /* Marge dret de 10 píxels */ <br>
+                } <br>
+            </div>
+        </div>
+        <h3>2. Farcits (padding)</h3>
+        <p>
+            La propietat padding controla l'espai interior d'un element, és
+            a dir, l'espai entre el contingut d'un element (com text o
+            imatges) i les seves vores. Igual que amb els marges, els farcits
+            es poden definir per a tots els costats o per a cadascun
+            individualment.
+        </p>
+        <div class="div_centrat">
+            <div class="capsa">
+                div { <br>
+                padding: 20px; /* Aplica un farcit de 20 píxels a tots els costats */ <br>
+                } <br>
+                h2 { <br>
+                padding-left: 15px; /* Aplica un farcit de 15 píxels al costat esquerre */ <br>
+                } <br>
+            </div>
+        </div>
+        <h3>3. Vores (border)</h3>
+        <ol>
+            La propietat border s'utilitza per afegir una vora al voltant
+            d'un element. Aquesta propietat té diversos subatributs:
+            <li>
+                <b>amplada de la vora</b> (border-width): defineix el gruix de
+                la vora.
+            </li>
+            <li>
+                <b>estil de la vora</b> vora (border-style): pot ser solid (sòlid),
+                dashed (ratllat), dotted (puntets), etc.
+            </li>
+            <li>
+                <b>color de la vora</b> (border-color): especifica el color de la
+                vora.
+            </li>
+        </ol>
+        <div class="div_centrat">
+            <div class="capsa">
+                div { <br>
+                border: 2px solid black; /* Vora de 2 píxels, sòlida i negra */ <br>
+                } <br>
+                p { <br>
+                border: 1px dashed blue; /* Vora d'1 píxel, ratllada i blava */ <br>
+                } <br>
+            </div>
+        </div>
+        <h3>Unitats comunes:</h3>
+        <ol>
+            <li>
+                <b>Píxels(px):</b>
+            </li>
+            <ol type="a">
+                <li>
+                    Unitat fixa, representa un punt a la pantalla.
+                </li>
+                <li>
+                    <b>Exemple:</b> margin: 20px;
+                </li>
+            </ol>
+            <li>
+                <b>Ems(em)</b>
+            </li>
+            <ol type="a">
+                <li>
+                    Unitat relativa a la mida de la font de l'element pare.
+                </li>
+                <li>
+                    <b>Exemple:</b> padding: 2em; (2 vegades la mida de la font).
+                </li>
+            </ol>
+            <li>
+                <b>Rems(rem)</b>
+            </li>
+            <ol type="a">
+                <li>
+                    Unitat relativa a la mida de la font de l'element arrel
+                </li>
+                <li>
+                    <b>Exemple:</b> marign: 1.5rem; (1.5 vegades la mida de la font arrel)
+                </li>
+            </ol>
+            <li>
+                <b>Percentatge(%)</b>
+            </li>
+            <ol type="a">
+                <li>
+                    Relativa a l'amplada o alçada del contenidor pare
+                </li>
+                <li>
+                    <b>Exemple:</b> padding: 5%; (5% de l'amplada del Viewport)
+                </li>
+            </ol>
+            <li>
+                <b>Viewport(vw, vh)</b>
+            </li>
+            <ol type="a">
+                <li>
+                    Relativa a la mida de la finestra visible.
+                </li>
+                <li>
+                    <b>Exemple:</b> margin: 5vw; (5% de l'amplada del viewport)
+                </li>
+            </ol>
+            <li>
+                <b>Vores(border-width)</b>
+            </li>
+            <ol type="a">
+                <li>
+                    Gruixos predeterminats: thin, medium, thick o valors com px.
+                </li>
+                <li>
+                    <b>Exemple:</b> thick solid black
+                </li>
+            </ol>
+        </ol>
+        <div class="div_centrat">
+            <div class="capsa">
+                &lt;!DOCTYPE html&gt;<br>
+                &lt;html lang="ca"&gt;<br>
+                &lt;head&gt;<br>
+                &lt;meta charset="UTF-8"&gt;<br>
+                &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                &lt;title&gt;Màrges, Farcits i Vores&lt;/title&gt;<br>
+                &lt;style&gt;<br>
+                .caixa {<br>
+                margin: 20px; /* Marge de 20 píxels a tots els costats */<br>
+                padding: 15px; /* Farcit de 15 píxels a tots els costats */<br>
+                border: 3px solid red; /* Vora de 3 píxels, sòlida i vermella */<br>
+                }<br>
+                .titol {<br>
+                margin-top: 30px; /* Marge superior de 30 píxels */<br>
+                padding-bottom: 10px; /* Farcit inferior de 10 píxels */<br>
+                border-bottom: 2px dashed green; /* Vora inferior ratllada i verda */<br>
+                }<br>
+                &lt;/style&gt;<br>
+                &lt;/head&gt;<br>
+                &lt;body&gt;<br>
+                &lt;div class="caixa"&gt;<br>
+                &lt;h2 class="titol"&gt;Títol amb marges i vores&lt;/h2&gt;<br>
+                &lt;p&gt;Aquest és un paràgraf dins d'una caixa amb marges, farcits i una vora sòlida.&lt;/p&gt;<br>
+                &lt;/div&gt;<br>
+                &lt;/body&gt;<br>
+                &lt;/html&gt;<br>
+            </div>
+        </div>
+
+    </section>
+    <hr>
+    <section>
+        
     </section>
 
 </body>
