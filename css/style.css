@@ -461,3 +461,38 @@ h1::before {
     background-color: var(--color-secundari);
     color: white;
 }
+
+/* Transició simple */
+.buttona {
+    padding: 10px 20px;
+    background-color: lightblue;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.buttona:hover {
+    background-color: darkblue;
+}
+
+/* Animació clau */
+@keyframes moure {
+    0% {
+        transform: translateX(0);
+    }
+
+    50% {
+        transform: translateX(100px);
+    }
+
+    100% {
+        transform: translateX(0);
+    }
+}
+
+.diva {
+    width: 100px;
+    height: 100px;
+    background-color: coral;
+    animation: moure 2s ease-in-out infinite;
+}
