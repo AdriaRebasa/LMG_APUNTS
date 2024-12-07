@@ -965,9 +965,144 @@
                 </div>
             </div>
         </div>
+    </section>
+    <hr>
+    <section>
+        <h2 id="var">Variables CSS (Custom Properties)</h2>´
+        <p>
+            Les variables CSS, també conegudes com Custom Properties, permeten definir valors reutilitzables dins d'un
+            document CSS. Aquesta característica facilita molt la gestió i manteniment de grans fulls d'estil, ja que
+            pots
+            centralitzar valors com colors, mides i espaiats, i reutilitzar-los en diverses regles CSS. Si necessites
+            fer un canvi en
+            algun d’aquests valors, només hauràs de modificar la variable en un lloc, i el canvi es propagarà a totes
+            les parts del
+            document on s'utilitza.
+        </p>
+        <h3>1. Definir i utilitzar variables CSS</h3>
+        <p>
+            Les variables CSS es defineixen dins de qualsevol selector utilitzant el prefix --. És habitual
+            definir-les en el selector :root per tal que estiguin disponibles globalment en tot el document.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                :root { <br>
+                --color-primari: #3498db; <br>
+                --marge-petit: 10px; <br>
+                } <br>
+                body { <br>
+                background-color: var(--color-primari); <br>
+                margin: var(--marge-petit); <br>
+                } <br>
+            </div>
+        </div>
+        <h3>2. Beneficis de les variables en grans projectes</h3>
+        <p>
+            L’ús de variables és especialment útil en projectes grans o complexos, on necessites garantir la
+            consistència en
+            colors, mides, fonts i altres estils. Canviar aquests valors en múltiples llocs manualment pot ser tediós i
+            propens a
+            errors. Les variables centralitzen aquests valors en un sol lloc.
+        </p>
+        <ol>
+            <b>Avantatges</b>
+            <li>
+                <b>Mantenibilitat:</b> Pots modificar fàcilment valors globals com els colors o les mides canviant només
+                una variable.
+            </li>
+            <li>
+                <b>Reutilització:</b> Les mateixes variables es poden utilitzar en qualsevol lloc del full d’estil,
+                estalviant temps i espai.
+            </li>
+            <li>
+                <b>Consistència:</b> L'ús de variables assegura que tots els elements que depenen d'una variable tinguin
+                el mateix
+                estil.
+            </li>
+        </ol>
+        <h3>3. Variables CSS amb valors per defecte</h3>
+        <p>
+            Pots proporcionar un valor per defecte a les variables CSS en cas que no estiguin definides. Això és útil si
+            vols
+            assegurar-te que el disseny funcioni fins i tot si la variable falla o no es troba.
+        </p>
 
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                h2 { <br>
+                color: var(--color-primari, black); /* Utilitza negre si --color-primari no està definit */ <br>
+                } <br>
+            </div>
+        </div>
 
-
+        <h3>Exemple complet amb variables CSS:</h3>
+        <ol>
+            <li>
+                S'utilitzen variables CSS per gestionar els
+                colors, la mida del text i els marges.
+            </li>
+            <li>
+                El botó canvia de color quan es passa el
+                ratolí per sobre, utilitzant les mateixes
+                variables per a la seva transició.
+            </li>
+        </ol>
+        <div class="div_centrat_fila">
+            <div class="div_centrat">
+                <h3>Exemple:</h3>
+                <div class="capsa">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="ca"&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                    &lt;title&gt;Variables CSS&lt;/title&gt;<br>
+                    &lt;style&gt;<br>
+                    :root {<br>
+                    --color-primari: #3498db;<br>
+                    --color-secundari: #2ecc71;<br>
+                    --marge-general: 20px;<br>
+                    --mida-text: 16px;<br>
+                    }<br>
+                    body {<br>
+                    background-color: var(--color-primari);<br>
+                    color: white;<br>
+                    margin: var(--marge-general);<br>
+                    font-size: var(--mida-text);<br>
+                    }<br>
+                    h1 {<br>
+                    color: var(--color-secundari);<br>
+                    }<br>
+                    button {<br>
+                    padding: 10px 20px;<br>
+                    background-color: white;<br>
+                    color: var(--color-primari);<br>
+                    border: none;<br>
+                    cursor: pointer;<br>
+                    }<br>
+                    button:hover {<br>
+                    background-color: var(--color-secundari);<br>
+                    color: white;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;h1&gt;Ús de Variables CSS&lt;/h1&gt;<br>
+                    &lt;p&gt;Aquest paràgraf utilitza variables per definir la mida del text, els colors i els
+                    marges.&lt;/p&gt;<br>
+                    &lt;button&gt;Botó interactiu&lt;/button&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                </div>
+            </div>
+            <div class="div_centrat capsa body">
+                <h2 class="h2">Ús de Variables CSS</h2>
+                <p>Aquest paràgraf utilitza variables per definir la mida del text, els colors i els marges.</p>
+                <button class="button">Botó interactiu</button>
+            </div>
+        </div>
 
     </section>
 

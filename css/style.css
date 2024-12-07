@@ -1,5 +1,9 @@
 :root {
     --colorboto: rgb(134, 61, 195);
+    --color-primari: #3498db;
+    --color-secundari: #2ecc71;
+    --marge-general: 20px;
+    --mida-text: 16px;
 }
 
 * {}
@@ -432,4 +436,28 @@ h1::before {
 /* Estils per al fons quan el popover està obert */
 ::backdrop {
     backdrop-filter: blur(3px);
+}
+
+.body {
+    background-color: var(--color-primari);
+    color: white;
+    margin: var(--marge-general);
+    font-size: var(--mida-text);
+}
+
+.h2 {
+    color: var(--color-secundari);
+}
+
+.button {
+    padding: 10px 20px;
+    background-color: white;
+    color: var(--color-primari);
+    border: none;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: var(--color-secundari);
+    color: white;
 }
