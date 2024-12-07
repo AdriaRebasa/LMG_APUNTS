@@ -1360,13 +1360,238 @@
                     <div class="relatiu">Aquest element té `position: relative`.</div>
                     <div class="absolut">Aquest element té `position: absolute`.</div>
                     <div class="fix">Aquest element té `position: fixed`.</div>
-
                 </div>
             </div>
+        </div>
+    </section>
 
+    <section>
+        <h2 id="flexbox">Disseny bàsic amb Flexbox</h2>´
+        <p>
+            Flexbox és un sistema de disseny en CSS que proporciona una manera molt eficient de distribuir l'espai entre
+            els
+            elements i alinear-los dins d'un contenidor, fins i tot quan la mida dels elements és desconeguda o
+            dinàmica. Flexbox
+            és ideal per crear dissenys de pàgines adaptatives, ja que facilita l'alineació, distribució i ordenació
+            dels elements
+            dins d'un contenidor.
+        </p>
+        <h3>1. El contenidor flex (display: flex)</h3>
+        <p>
+            El punt de partida per utilitzar Flexbox és establir display: flex en
+            l'element contenidor. Aquest contenidor es coneix com a contenidor
+            flex, i els seus elements fills es coneixen com a elements flex. Un cop
+            activat el display: flex, pots utilitzar diverses propietats per ajustar com
+            es distribueixen els elements dins del contenidor.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                .contingut { <br>
+                display: flex; <br>
+                } <br>
+                <br>
+                &lt;div class="contenidor"&gt;<br>
+                &lt;div&gt;Element 1&lt;/div&gt;<br>
+                &lt;div&gt;Element 2&lt;/div&gt;<br>
+                &lt;div&gt;Element 3&lt;/div&gt;<br>
+                &lt;/div&gt;<br>
+            </div>
         </div>
 
+        <h3>2. Direcció del flux (flex-direction)</h3>
+        <p>
+            Per defecte, els elements flex es disposen en fila horitzontalment. Pots
+            canviar la direcció amb la propietat flex-direction.
+        </p>
+        <ul>
+            <b>Els valors més comuns són:</b>
+            <li>
+                <b>row:</b> Els elements es col·loquen en fila (horitzontal) (valor per
+                defecte).
+            </li>
+            <li>
+                <b>row-reverse:</b> Els elements es col·loquen en fila però en ordre
+                invers.
+            </li>
+            <li>
+                <b>column:</b> Els elements es col·loquen en columna (vertical).
+            </li>
+            <li>
+                <b>column-reverse:</b> Els elements es col·loquen en columna però en
+                ordre invers.
+            </li>
+        </ul>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                .contenidor { <br>
+                display: flex; <br>
+                flex-direction: column; <br>
+                } <br>
+            </div>
+        </div>
 
+        <h3>3. Alineació horitzontal (justify-content)</h3>
+        <p>
+            La propietat justify-content controla l'alineació dels elements al llarg de
+            l'eix principal (horitzontal per defecte). Pots distribuir els elements flex de
+            diferents maneres dins del contenidor.
+        </p>
+        <ul>
+            <b>Els valors més comuns són:</b>
+            <li>
+                <b>flex-start:</b> Els elements s'alineen al començament del contenidor.
+            </li>
+            <li>
+                <b>flex-end:</b> Els elements s'alineen al final del contenidor.
+            </li>
+            <li>
+                <b>center:</b> Els elements es centren dins del contenidor.
+            </li>
+            <li>
+                <b>space-between:</b> Es distribueixen uniformement amb espai entre ells.
+            </li>
+            <li>
+                <b>space-around:</b> Els elements tenen espai al voltant de cadascun.
+            </li>
+        </ul>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                .contenidor { <br>
+                display: flex; <br>
+                justify-content: center; <br>
+                } <br>
+            </div>
+        </div>
+
+        <h3>4. Alineació vertical (align-items)</h3>
+        <p>
+            La propietat align-items controla l'alineació dels elements al llarg de l'eix
+            transversal (vertical si la direcció és horitzontal). Aquesta propietat
+            determina com s'alineen els elements flex dins del contenidor en relació
+            amb la seva alçada.
+        </p>
+        <ul>
+            <b>Els valors més comuns són:</b>
+            <li>
+                <b>stretch:</b> Els elements s'estiren per omplir el contenidor (valor per
+                defecte).
+            </li>
+            <li>
+                <b>flex-start:</b> Els elements s'alineen a la part superior del contenidor.
+            </li>
+            <li>
+                <b>flex-end:</b> Els elements s'alineen a la part inferior del contenidor.
+            </li>
+            <li>
+                <b>center:</b> Els elements es centren verticalment dins del contenidor.
+            </li>
+            <li>
+                <b>baseline:</b> Els elements s'alineen segons la seva línia de base de text.
+            </li>
+        </ul>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                .contenidor { <br>
+                display: flex; <br>
+                align-items: center; <br>
+                } <br>
+            </div>
+        </div>
+
+        <h3>5. Control de l'espai que ocupa cada element (flex-grow)</h3>
+        <p>
+            La propietat flex-grow especifica com els elements flex creixen dins del contenidor per ocupar l'espai
+            disponible. Cada element es pot assignar
+            un valor numèric que indica quant ha de créixer en relació amb els altres elements. Si tots els elements
+            tenen flex-grow: 1, l'espai disponible
+            es distribuirà de manera uniforme.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                .element { <br>
+                flex-grow: 2; /* Aquest element creixerà el doble que els altres elements */ <br>
+                } <br>
+            </div>
+        </div>
+        <h3>Resum de les propietats vistes</h3>
+        <ol>
+            <li>
+                <b>display: flex:</b> Activa el Flexbox en el
+                contenidor.
+            </li>
+            <li>
+                <b>flex-direction:</b> Defineix si els elements es
+                col·loquen en fila o en columna.
+            </li>
+            <li>
+                <b>justify-content:</b> Alinea els elements
+                horitzontalment (eix principal).
+            </li>
+            <li>
+                <b>align-items:</b> Alinea els elements
+                verticalment (eix transversal).
+            </li>
+            <li>
+                <b>flex-grow:</b> Controla com creix cada element
+                dins del contenidor per ocupar espai.
+            </li>
+        </ol>
+        <div class="div_centrat_fila">
+            <div class="div_centrat">
+                <h3>Exemple:</h3>
+                <div class="capsa">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="ca"&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                    &lt;title&gt;Flexbox Bàsic&lt;/title&gt;<br>
+                    &lt;style&gt;<br>
+                    .contenidor {<br>
+                    display: flex;<br>
+                    flex-direction: row; /* Col·loca els elements en fila */<br>
+                    justify-content: space-around; /* Distribueix els elements amb espai al voltant */<br>
+                    align-items: center; /* Centra els elements verticalment */<br>
+                    height: 200px;<br>
+                    background-color: lightgray;<br>
+                    }<br>
+                    .element {<br>
+                    background-color: lightblue;<br>
+                    padding: 20px;<br>
+                    margin: 5px;<br>
+                    }<br>
+                    .element-gran {<br>
+                    flex-grow: 2; /* Aquest element ocuparà el doble d'espai que els altres */<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;div class="contenidor"&gt;<br>
+                    &lt;div class="element"&gt;Element 1&lt;/div&gt;<br>
+                    &lt;div class="element element-gran"&gt;Element 2 (Gran)&lt;/div&gt;<br>
+                    &lt;div class="element"&gt;Element 3&lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                </div>
+            </div>
+            <div class="div_centrat capsa">
+                <div class="contenidor">
+                    <div class="element">Element 1</div>
+                    <div class="element element-gran">Element 2 (Gran)</div>
+                    <div class="element">Element 3</div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <hr>
+    <section>
 
     </section>
 

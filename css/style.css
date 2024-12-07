@@ -2,9 +2,7 @@
     --colorboto: rgb(134, 61, 195);
 }
 
-*{
-
-}
+* {}
 
 html {
     scroll-behavior: smooth;
@@ -180,19 +178,19 @@ h1 {
     grid-area: 2 / 3 / 3 / 4;
 }
 
-.ex5{
+.ex5 {
     font-family: "Arial", sans-serif;
 }
 
-.ex6{
+.ex6 {
     text-align: center;
 }
 
-.ex7{
+.ex7 {
     font-weight: bold;
 }
 
-.ex8{
+.ex8 {
     font-style: italic;
 }
 
@@ -220,6 +218,7 @@ h1 {
     border: 2px solid red;
     overflow: scroll;
 }
+
 .relatiu {
     position: relative;
     top: 20px;
@@ -249,4 +248,27 @@ h1 {
     top: 10px;
     background-color: yellow;
     padding: 10px;
+}
+
+.contenidor {
+    display: flex;
+    flex-direction: row;
+    /* Col·loca els elements en fila */
+    justify-content: space-around;
+    /* Distribueix els elements amb espai al voltant */
+    align-items: center;
+    /* Centra els elements verticalment */
+    height: 200px;
+    background-color: lightgray;
+}
+
+.element {
+    background-color: lightblue;
+    padding: 20px;
+    margin: 5px;
+}
+
+.element-gran {
+    flex-grow: 2;
+    /* Aquest element ocuparà el doble d'espai que els altres */
 }
