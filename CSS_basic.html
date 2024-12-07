@@ -958,6 +958,188 @@
         </div>
 
     </section>
+    <hr>
+    <section>
+        <h2 id="dimensions">Dimensions i caixes</h2>
+
+        <p>
+            El CSS utilitza el model de caixa per representar els elements d'una pàgina web. Cada element es considera
+            com una
+            caixa rectangular que conté el contingut, farcits, marges i vores. És important entendre aquest model perquè
+            controla com es distribueixen i s'ajusten els elements dins de la pàgina. <br>
+            El model de caixa es compon de quatre parts principals:
+        </p>
+        <ol>
+            <li>
+                <b>Contingut:</b> El contingut real de l'element, com text, imatges o altres elements.
+            </li>
+            <li>
+                <b>Farcit (padding):</b> L'espai entre el contingut i la vora.
+            </li>
+            <li>
+                <b>Vora (border):</b> El límit al voltant del farcit.
+            </li>
+            <li>
+                <b>Marge (margin):</b> L'espai extern entre la vora i altres elements.
+            </li>
+        </ol>
+        <h3>1. Propietats de dimensions (width i height)</h3>
+        <p>
+            Les propietats width (amplada) i height (alçada) s’utilitzen per definir la mida d’un element. Aquests
+            valors es
+            poden definir en unitats fixes com píxels (px) o unitats relatives com percentatges (%), que depenen de la
+            mida del
+            seu element contenidor.
+        </p>
+
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                div { <br>
+                width: 300px; /* Amplada fixa de 300 píxels */ <br>
+                height: 150px; /* Alçada fixa de 150 píxels */ <br>
+                } <br>
+                .container { <br>
+                width: 50%; /* Amplada del 50% de l'element contenidor */ <br>
+                height: auto; /* L'alçada s'ajusta automàticament */ <br>
+                } <br>
+            </div>
+        </div>
+
+        <h3>2. El model de caixa en CSS</h3>
+        <p>
+            El model de caixa estableix com es calculen les dimensions d'un element tenint en compte les propietats de
+            marges, farcits, i vores. Per
+            defecte, la mida de width i height només afecta el contingut. Per incloure el farcit i la vora dins de les
+            dimensions de l'element, es pot utilitzar
+            la propietat box-sizing. <br> <b>Propietat box-sizing</b>
+        </p>
+        <ol>
+            La propietat box-sizing controla com es calculen les dimensions totals de l’element. Hi ha dues opcions
+            principals:
+            <li>
+                <b>content-box</b> (valor per defecte): Només inclou el contingut en les dimensions, mentre que les
+                vores i els farcits s'afegeixen a part.
+            </li>
+            <li>
+                <b>border-box:</b> Inclou el contingut, el farcit i la vora dins de les dimensions especificades.
+            </li>
+        </ol>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                div { <br>
+                width: 200px; <br>
+                padding: 20px; <br>
+                border: 5px solid black; <br>
+                box-sizing: border-box; <br>
+                } <br>
+            </div>
+        </div>
+
+        <h3>3. Control del desbordament (overflow)</h3>
+        <p>
+            Quan el contingut d'un element és més gran que les dimensions especificades, el CSS ofereix la propietat
+            overflow per controlar com es
+            mostra el contingut que desborda.
+        </p>
+        <ul>
+            <b>Els valors més comuns són:</b>
+            <li>
+                <b>visible:</b> El contingut que desborda es mostra fora de l’element (valor per defecte).
+            </li>
+            <li>
+                <b>hidden:</b> El contingut que desborda es retalla i no es mostra.
+            </li>
+            <li>
+                <b>scroll:</b> Mostra barres de desplaçament, encara que el contingut no desbordi.
+            </li>
+            <li>
+                <b>auto:</b> Mostra barres de desplaçament només si el contingut desborda.
+            </li>
+        </ul>
+
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                div { <br>
+                width: 150px; <br>
+                height: 100px; <br>
+                overflow: scroll; <br>
+                } <br>
+            </div>
+        </div>
+
+        <h3>Resum de les propietats vistes:</h3>
+        <ol>
+            <li>
+                <b>width i height:</b> Defineixen les dimensions d'un element.
+            </li>
+            <li>
+                <b>box-sizing:</b> Controla com es calculen les dimensions totals d'un element tenint en compte el
+                farcit i la vora.
+            </li>
+            <li>
+                <b>overflow:</b> Controla com es maneja el contingut que desborda les dimensions de l'element.
+            </li>
+        </ol>
+
+        <div class="div_centrat_fila">
+            <div class="div_centrat">
+                <h3>Exemple:</h3>
+                <div class="capsa">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="ca"&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                    &lt;title&gt;Dimensions i Caixes en CSS&lt;/title&gt;<br>
+                    &lt;style&gt;<br>
+                    .caixa {<br>
+                    width: 300px;<br>
+                    height: 200px;<br>
+                    padding: 20px;<br>
+                    border: 5px solid darkblue;<br>
+                    margin: 20px;<br>
+                    box-sizing: border-box;<br>
+                    }<br>
+                    .desbordament {<br>
+                    width: 150px;<br>
+                    height: 100px;<br>
+                    border: 2px solid red;<br>
+                    overflow: scroll;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;div class="caixa"&gt;<br>
+                    Aquesta és una caixa amb farcit i vora. Les dimensions totals es calculen amb<br>
+                    `box-sizing: border-box`.<br>
+                    &lt;/div&gt;<br>
+                    &lt;div class="desbordament"&gt;<br>
+                    Aquest és un exemple amb desbordament. Si el contingut és més gran que l'espai<br>
+                    disponible, es mostraran barres de desplaçament.<br>
+                    &lt;/div&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+
+                </div>
+            </div>
+            <div class="div_centrat">
+                <div class="caixa ">
+                    Aquesta és una caixa amb farcit i vora. Les dimensions totals es calculen amb<br>
+                    `box-sizing: border-box`.
+                </div>
+            </div>
+            <div class="div_centrat">
+                <div class="desbordament">
+                    Aquest és un exemple amb desbordament. Si el contingut és més gran que l'espai<br>
+                    disponible, es mostraran barres de desplaçament.
+                </div>
+            </div>
+        </div>
+
+    </section>
 
 </body>
 
