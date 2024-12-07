@@ -1592,6 +1592,203 @@
     </section>
     <hr>
     <section>
+        <h2 id="media">Media Queries (Introducció)</h2>
+        <p>
+            Les Media Queries són una característica poderosa del CSS que permet adaptar el disseny d'una pàgina web en
+            funció de les característiques del dispositiu que l'està visualitzant, com la mida de la pantalla, la
+            resolució o
+            l'orientació. Aquesta tècnica és clau per implementar dissenys responsius que ofereixen una experiència
+            òptima tant
+            en dispositius mòbils com en tauletes o ordinadors de sobretaula.
+        </p>
+
+        <h3>1. Què són les Media Queries?</h3>
+        <p>
+            Una media query és una condició que s'afegeix al CSS
+            per aplicar regles d'estil només quan es compleixin
+            certes característiques del dispositiu o de la finestra
+            del navegador. L'exemple més comú és aplicar estils
+            diferents en funció de l'amplada de la pantalla.
+        </p>
+
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                @media (condició) { <br>
+                /* Estils que només s'aplicaran si es compleix la condició */ <br>
+                } <br>
+            </div>
+        </div>
+        <h3>2. Aplicació bàsica de Media Queries per a pantalles de diferent
+            mida</h3>
+        <p>
+            Un ús típic de les media queries és adaptar el disseny a diferents
+            amplades de pantalla. Per exemple, pots ajustar els estils per a
+            pantalles grans i petites.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                /* Estils per a pantalles grans (per sobre de 768px d'amplada) */ <br>
+                @media (min-width: 768px) { <br>
+                body { <br>
+                background-color: lightblue; <br>
+                } <br>
+                } <br>
+                /* Estils per a pantalles petites (per sota de 768px d'amplada) */ <br>
+                @media (max-width: 767px) { <br>
+                body { <br>
+                background-color: lightgreen; <br>
+                } <br>
+                } <br>
+            </div>
+        </div>
+        <h3>3. Tipus de condicions més comunes en les Media Queries</h3>
+        <p>
+            A continuació, veurem algunes de les condicions més comunes que pots utilitzar dins de les media queries:
+        </p>
+        <h3>a) Amplada de la pantalla (min-width i max-width)</h3>
+        <p>
+            Aquestes condicions s'utilitzen per aplicar estils quan la finestra del
+            navegador té una amplada mínima (min-width) o màxima (max-width).
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                @media (min-width: 600px) { <br>
+                /* Estils per a pantalles amb una amplada de 600 píxels o més */ <br>
+                } <br>
+                @media (max-width: 600px) { <br>
+                /* Estils per a pantalles amb una amplada de fins a 600 píxels */ <br>
+                } <br>
+            </div>
+        </div>
+
+        <h3>b) Altura de la pantalla (min-height i max-height)</h3>
+        <p>
+            Aquestes condicions funcionen de manera similar a les d'amplada,
+            però es basen en l'altura de la finestra.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                @media (min-height: 500px) { <br>
+                /* Estils per a pantalles amb una alçada de 500 píxels o més */ <br>
+                } <br>
+            </div>
+        </div>
+        <h3>c) Orientació de la pantalla (orientation)</h3>
+        <p>
+            Pots utilitzar la condició orientation per aplicar estils diferents si la
+            pantalla està en orientació horitzontal (landscape) o vertical (portrait).
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                @media (orientation: landscape) { <br>
+                /* Estils per a dispositius en orientació horitzontal */ <br>
+                } <br>
+                @media (orientation: portrait) { <br>
+                /* Estils per a dispositius en orientació vertical */ <br>
+                } <br>
+            </div>
+        </div>
+        <h3>4. Ús de múltiples condicions en una Media Query</h3>
+        <p>
+            Pots combinar diverses condicions en una sola media query mitjançant les paraules clau and o only per
+            especificar
+            estils molt concrets.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                @media (min-width: 600px) and (max-width: 1200px) { <br>
+                /* Estils aplicats només si la pantalla té entre 600 i 1200 píxels d'amplada */ <br>
+                } <br>
+            </div>
+        </div>
+        <h3>Resum de les propietats vistes:</h3>
+        <ul>
+            <li>
+                <b>@media:</b> Defineix una media query.
+            </li>
+            <li>
+                <b>min-width i max-width:</b> Aplica estils segons
+                l'amplada mínima o màxima de la pantalla.
+            </li>
+            <li>
+                <b>min-height i max-height:</b> Aplica estils segons
+                l'altura mínima o màxima de la pantalla.
+            </li>
+            <li>
+                <b>orientation:</b> Aplica estils segons l'orientació del
+                dispositiu (vertical o horitzontal).
+            </li>
+            <li>
+                <b>and:</b> Combina múltiples condicions en una media
+                query.
+            </li>
+        </ul>
+        <div class="div_centrat_fila">
+            <div class="div_centrat">
+                <h3>Exemple:</h3>
+                <div class="capsa">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="ca"&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                    &lt;title&gt;Disseny Responsive&lt;/title&gt;<br>
+                    &lt;style&gt;<br>
+                    body {<br>
+                    font-family: Arial, sans-serif;<br>
+                    }<br>
+                    .contenidor {<br>
+                    display: flex;<br>
+                    flex-direction: column;<br>
+                    padding: 20px;<br>
+                    }<br>
+                    .element {<br>
+                    background-color: lightblue;<br>
+                    padding: 10px;<br>
+                    margin: 5px;<br>
+                    text-align: center;<br>
+                    }<br>
+                    @media (min-width: 768px) {<br>
+                    .contenidor {<br>
+                    flex-direction: row;<br>
+                    }<br>
+                    .element {<br>
+                    font-size: 24px;<br>
+                    }<br>
+                    }<br>
+                    @media (max-width: 767px) {<br>
+                    .element {<br>
+                    font-size: 18px;<br>
+                    }<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;div class="contenidor"&gt;<br>
+                    &lt;div class="element"&gt;Element 1&lt;/div&gt;<br>
+                    &lt;div class="element"&gt;Element 2&lt;/div&gt;<br>
+                    &lt;div class="element"&gt;Element 3&lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+
+                </div>
+            </div>
+            <div class="div_centrat capsa">
+                <div class="contenidor">
+                    <div class="element">Element 1</div>
+                    <div class="element">Element 2</div>
+                    <div class="element">Element 3</div>
+                </div>
+
+            </div>
+        </div>
 
     </section>
 

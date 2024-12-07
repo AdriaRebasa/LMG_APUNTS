@@ -228,7 +228,7 @@ h1 {
 }
 
 .absolut {
-    position: absolute;
+    /*position: absolute; Comentat perque sinos es absolute respecte al body*/
     top: 50px;
     left: 50px;
     background-color: lightgreen;
@@ -271,4 +271,10 @@ h1 {
 .element-gran {
     flex-grow: 2;
     /* Aquest element ocuparà el doble d'espai que els altres */
+}
+
+@media (max-width: 767px) {
+    .element {
+        font-size: 18px;
+    }
 }
