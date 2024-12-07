@@ -408,3 +408,28 @@ h1::before {
     background-color: lightgreen;
     height: 100%;
 }
+
+/* Estils per al botó activador */
+.trigger {
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+/* Estils per al contingut del popover */
+#popoverContent {
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border-radius: 5px;
+    width: 200px;
+    text-align: center;
+}
+
+/* Estils per al fons quan el popover està obert */
+::backdrop {
+    backdrop-filter: blur(3px);
+}
