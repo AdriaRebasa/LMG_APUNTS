@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>Adrià Rebasa Gamundi</title>
     <meta charset="UTF-8">
@@ -36,34 +37,408 @@
 
         <h2 class="index">Índex</h2>
         <ol>
-            <a href="#" class="negre">
+            <a href="#intro" class="negre">
                 <li>CSS avançat: introducció</li>
             </a>
-            <a href="#" class="negre">
+            <a href="#selectors" class="negre">
                 <li>Selectors avançats</li>
             </a>
-            <a href="#" class="negre">
+            <a href="#fonts" class="negre">
                 <li>Propietats avançades de fonts i tipografia</li>
             </a>
-            <a href="#" class="negre">
+            <a href="#layouts" class="negre">
                 <li>Layouts avançat amb Flexbox i Grid</li>
             </a>
-            <a href="#" class="negre">
+            <a href="#popover" class="negre">
                 <li>Popover API</li>
             </a>
-            <a href="#" class="negre">
+            <a href="#var" class="negre">
                 <li>Variables CSS(Custom propertie)</li>
             </a>
-            <a href="#" class="negre">
+            <a href="#animacions" class="negre">
                 <li>Animacions i transicions</li>
             </a>
-            
-            
+
+
         </ol>
     </nav>
     <br>
     <hr>
     <br>
-    
+    <section>
+        <h2 id="intro">CSS avançat: introducció</h2>
+        <p>
+            A mesura que els projectes web es tornen més complexos, l’ús del CSS també ha d’evolucionar per oferir
+            solucions
+            més adaptatives, eficients i organitzades. El CSS avançat no només se centra en dissenyar una pàgina web
+            atractiva,
+            sinó també en assegurar-se que aquesta pàgina funcioni bé en diversos dispositius, sigui fàcil de mantenir i
+            estigui
+            optimitzada per a un rendiment òptim.
+        </p>
+        <h3>Importància del disseny adaptable i optimitzat</h3>
+        <p>
+            Un dels pilars del CSS avançat és el disseny responsive, que
+            permet que les pàgines web s'adaptin a diferents mides de
+            pantalla i dispositius. Aquesta tècnica és cada cop més important
+            a causa de l'augment de l'ús de dispositius mòbils. Per aconseguir
+            un disseny adaptatiu, el CSS avançat incorpora tècniques com:
+        </p>
+        <ol>
+            <li>Media Queries avançade</li>
+            <li>Unitats relatives i flexibles</li>
+            <li>Layouts responsius amb Flexbox i Grid</li>
+        </ol>
+        <h3>Millors pràctiques d'organització del CSS</h3>
+        <p>
+            A mesura que els projectes es fan més grans, és essencial mantenir
+            una bona organització del codi CSS per evitar que es torni difícil de
+            gestionar i mantenir. A continuació, algunes millors pràctiques per a
+            l'organització del CSS en projectes avançats:
+        </p>
+        <ol>
+            <li>Modularització del CSS:</li>
+            <ul>
+                <li>Dividir el codi CSS en fitxers més petits i temàtics</li>
+                <li>Arquitectura CSS escalable (SMACSS, BEM)</li>
+            </ul>
+            <li>Pre-processadors CSS:</li>
+            <ul>
+                <li>Sass o LESS</li>
+            </ul>
+            <li>Optimització del CSS:</li>
+            <ul>
+                <li>Minificació del CSS</li>
+                <li>Carregament asíncron del CSS</li>
+            </ul>
+            <li>Utilització de frameworks CSS:</li>
+            <ul>
+                <li>Bootstrap</li>
+                <li>Tailwind CSS</li>
+            </ul>
+        </ol>
+        <p>
+            Els selectors avançats en CSS permeten aplicar estils amb molta més precisió i flexibilitat, permetent
+            seleccionar
+            elements específics en funció de la seva posició, relació amb altres elements o atributs.
+        </p>
+        <h3>1. Selectors d'atribut</h3>
+        <p>
+            Els selectors d'atribut permeten aplicar estils als elements HTML que contenen un determinat atribut o valor
+            d'atribut. Són especialment útils per estilitzar
+            elements de formularis o en casos en què utilitzis atributs personalitzats.
+        </p>
+        <h3>Exemples comuns:</h3>
+        <div class="gridx1">
+            <div class="div1">
+                <div class="div_centrat">
+                    <h3>Seleccionar elements amb un atribut específic:</h3>
+                    <div class="capsa">
+                        input[type="text"] { <br>
+                        border: 1px solid blue;<br>
+                        } <br>
+                    </div>
+                </div>
+                <p>En aquest exemple, tots els elements <input> que tenen
+                    l'atribut type="text" tindran una vora blava.</p>
+            </div>
+            <div class="div2">
+                <div class="div_centrat">
+                    <h3>Seleccionar elements amb un atribut
+                        que conté un valor específic:</h3>
+                    <div class="capsa">
+                        a[href*="example"] { <br>
+                        color: green; <br>
+                        } <br>
+                    </div>
+                </div>
+                <p>
+                    Aquest exemple aplica el color verd a tots els enllaços (<a>)
+                        que contenen la paraula "example" en l'atribut href.
+                </p>
+
+            </div>
+            <div class="div3">
+                <div class="div_centrat">
+                    <h3>Seleccionar elements amb un valor d'atribut
+                        que comença amb un valor específic:</h3>
+                    <div class="capsa">
+                        img[src^="https"] { <br>
+                        border: 2px solid black; <br>
+                        } <br>
+                    </div>
+                </div>
+                <p>
+                    Això aplica una vora negra a totes les imatges (<img>) que
+                    tenen una URL src que comença per "https".
+                </p>
+
+            </div>
+            <div class="div4">
+                <div class="div_centrat">
+                    <h3>Seleccionar tots els elements amb un atribut:</h3>
+                    <div class="capsa">
+                        [personalitzat] { <br>
+                        border: 1px solid red; <br>
+                        } <br>
+                    </div>
+                </div>
+                <p>
+                    En aquest exemple, tots els elements que tenen l'atribut
+                    personalitzat tindran una vora vermella.
+                </p>
+
+            </div>
+        </div>
+        <h3>2. Selectors combinats</h3>
+        <p>
+            Els selectors combinats permeten seleccionar elements que tenen una relació específica amb altres elements
+            dins del document. Els combinadors més
+            comuns són:
+        </p>
+        <div class="grid2x2">
+            <div class="div1a">
+                <div class="div_centrat">
+                    <h3>a) Combinador de descendents ( )</h3>
+                    <p>Selecciona tots els elements que són descendents (fills, nets, etc.) d'un element pare.</p>
+                    <div class="capsa">
+                        div p { <br>
+                        color: red; <br>
+                        } <br>
+                    </div>
+                    <p>
+                        Això aplica el color vermell a tots els paràgrafs (
+                        &lt;p&gt;) que són descendents de qualsevol element &lt;div&gt;.
+                    </p>
+                </div>
+
+            </div>
+            <div class="div2a">
+                <div class="div_centrat">
+                    <h3>b) Combinador de fills directes (>)</h3>
+                    <p>Selecciona només els fills directes d'un element pare.</p>
+                    <div class="capsa">
+                        div > p { <br>
+                        color: blue; <br>
+                        } <br>
+                    </div>
+                    <p>
+                        En aquest cas, només els paràgrafs que són fills immediats d'un
+                        &lt;div&gt; tindran el text de color blau. Els nets o altres descendents no
+                        es veuran afectats.
+                    </p>
+                </div>
+
+            </div>
+            <div class="div3a">
+                <div class="div_centrat">
+                    <h3>c) Combinador de germans adjacents (+)</h3>
+                    <p>Selecciona l'element que està just després d'un altre element germà..</p>
+                    <div class="capsa">
+                        h1 + p { <br>
+                        font-weight: bold; <br>
+                        } <br>
+                    </div>
+                    <p>
+                        Aquest exemple fa que el primer paràgraf (&lt;p&gt;) que segueix
+                        directament un títol (&lt;h1&gt;) es mostri en negreta.
+                    </p>
+                </div>
+            </div>
+            <div class="div4a">
+                <div class="div_centrat">
+                    <h3>d) Combinador de germans generals (~)</h3>
+                    <p>Selecciona tots els germans que segueixen un element determinat dins del mateix pare.</p>
+                    <div class="capsa">
+                        h2 ~ p { <br>
+                        color: gray; <br>
+                        } <br>
+                    </div>
+                    <p>
+                        Aquest exemple fa que tots els paràgrafs (&lt;p&gt;) que
+                        segueixen un &lt;h2&gt; dins del mateix contenidor tinguin el text
+
+                        de color gris.
+                    </p>
+                </div>
+            </div>
+        </div>
+        <h3>3. Selectors pseudo-classe</h3>
+        <p>
+            Les pseudo-classes són selectors que s'utilitzen per aplicar estils a un element en un estat o condició
+            particular. Això permet canviar l'estil d'un element
+            quan l'usuari hi interactua o quan l'element compleix certs criteris.
+        </p>
+        <div class="grid2x2">
+            <div class="div1a">
+                <div class="div_centrat">
+                    <h3>:hover: Aplica estils quan l'usuari passa el ratolí per sobre de l'element.</h3>
+                    <div class="capsa">
+                        a:hover { <br>
+                        color: red; <br>
+                        } <br>
+                    </div>
+                    <p>
+                        Aquest exemple canvia el color d'un enllaç a vermell
+                        quan l'usuari passa el cursor per sobre.
+                    </p>
+                </div>
+            </div>
+            <div class="div2a">
+                <div class="div_centrat">
+                    <h3>:nth-child(): Selecciona elements en funció de la seva posició entre els seus germans.</h3>
+                    <div class="capsa">
+                        tr:nth-child(odd) { <br>
+                        background-color: #f0f0f0; <br>
+                        } <br>
+                    </div>
+                    <p>
+                        Això aplica un color de fons gris clar a les files imparells d'una taula.
+                    </p>
+                </div>
+
+            </div>
+            <div class="div3a">
+                <div class="div_centrat">
+                    <h3>:first-of-type: Selecciona el primer element del seu tipus dins del seu pare.</h3>
+                    <div class="capsa">
+                        p:first-of-type { <br>
+                        font-weight: bold; <br>
+                        } <br>
+                    </div>
+                    <p>
+                        En aquest exemple, el primer paràgraf dins de cada element
+                        pare tindrà el text en negreta.
+                    </p>
+                </div>
+            </div>
+            <div class="div4a">
+                <div class="div_centrat">
+                    <h3>:not(): Selecciona tots els elements excepte aquells que coincideixin amb el selector
+                        especificat.</h3>
+                    <div class="capsa">
+                        div:not(.important) { <br>
+                        background-color: yellow; <br>
+                        } <br>
+                    </div>
+                    <p>
+                        Això aplica un color de fons groc a tots els &lt;div&gt; que no
+                        tenen la classe important.
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <h3>4. Selectors pseudo-element</h3>
+        <p>
+            Els pseudo-elements permeten aplicar estils a una part específica d'un element, com el seu contingut abans o
+            després, o una línia de text. Els pseudo-
+            elements més comuns són ::before i ::after.
+        </p>
+        <div class="div_centrat_fila">
+            <div class="div_centrat_fila">
+                <h3>::before: Afegeix contingut o estils abans del contingut real d'un element.</h3>
+                <div class="capsa">
+                    h1::before { <br>
+                    content: "★ "; <br>
+                    color: gold; <br>
+                    } <br>
+                </div>
+                <p>Aquest exemple afegeix una estrella daurada abans de cada
+                <h1>.</p>
+            </div>
+            <div class="div_centrat_fila">
+                <h3>::after: Afegeix contingut o estils després del contingut real d'un element.</h3>
+                <div class="capsa">
+                    p::after { <br>
+                    content: " (Final)"; <br>
+                    color: gray; <br>
+                    } <br>
+                </div>
+                <p>Això afegeix la paraula "(Final)" en gris després de cada paràgraf.</p>
+            </div>
+
+        </div>
+        <h3>En aquest exemple:</h3>
+        <ul>
+            <li>
+                Els camps de text amb type="text" tenen
+                una vora blava.
+            </li>
+            <li>
+                Els paràgrafs fills directes de div tenen el
+                text de color verd.
+            </li>
+            <li>
+                Els enllaços es tornen vermells quan l'usuari
+                passa el cursor per sobre.
+            </li>
+            <li>
+                Els títols &lt;h1&gt; tenen una icona al davant
+                gràcies a ::before.
+            </li>
+        </ul>
+        <div class="div_centrat_fila">
+            <div class="div_centrat">
+                <h3>Exemple:</h3>
+                <div class="capsa">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="ca"&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                    &lt;title&gt;Selectors Avançats&lt;/title&gt;<br>
+                    &lt;style&gt;<br>
+                    /* Selectors d'atribut */<br>
+                    input[type="text"] {<br>
+                    border: 2px solid blue;<br>
+                    }<br>
+                    /* Combinador de fills directes */<br>
+                    div &gt; p {<br>
+                    color: green;<br>
+                    }<br>
+                    /* Pseudo-classe hover */<br>
+                    a:hover {<br>
+                    color: red;<br>
+                    }<br>
+                    /* Pseudo-element before */<br>
+                    h1::before {<br>
+                    content: "🔹 ";<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;h1&gt;Selectors avançats en CSS&lt;/h1&gt;<br>
+                    &lt;div&gt;<br>
+                    &lt;p&gt;Aquest paràgraf és fill directe d'un `div` i és de color verd.&lt;/p&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;input type="text" placeholder="Escriu alguna cosa"&gt;<br>
+                    &lt;a href="#"&gt;Enllaç amb hover vermell&lt;/a&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+
+                </div>
+            </div>
+            <div class="div_centrat capsa">
+                <h4>Selectors avançats en CSS</h4>
+                <div>
+                    <p>Aquest paràgraf és fill directe d'un `div` i és de color verd.</p>
+                </div>
+                <input type="text" placeholder="Escriu alguna cosa">
+                <a href="#">Enllaç amb hover vermell</a>
+
+            </div>
+        </div>
+
+    </section>
+    <hr>
+    <section>
+
+
+
+        
+    </section>
+
 </body>
+
 </html>
