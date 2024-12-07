@@ -367,3 +367,44 @@ h1::before {
     font-weight: 300;
     font-style: italic;
 }
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* 3 columnes iguals */
+    grid-gap: 10px;
+    /* Espai entre les columnes */
+    height: 400px;
+}
+
+.element {
+    background-color: lightblue;
+    padding: 20px;
+    text-align: center;
+}
+
+.element-gran {
+    grid-column: span 2;
+    /* Aquest element ocuparà dues columnes */
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10px;
+    height: 300px;
+}
+
+.element1 {
+    background-color: lightblue;
+    padding: 10px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-around;
+    /* Flexbox dins del contenidor grid */
+    align-items: center;
+    background-color: lightgreen;
+    height: 100%;
+}

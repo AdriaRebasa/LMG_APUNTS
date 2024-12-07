@@ -637,11 +637,215 @@
             <div class="div_centrat capsa ex9">
                 <h3 class="ex10">Propietats avançades de fonts</h3>
                 <p class="ex11">Aquest és un paràgraf amb estil cursiva i un pes lleuger de font.</p>
-
             </div>
         </div>
 
+    </section>
+    <hr>
+    <section>
+        <h2 id="layouts">Layouts amb Flexbox i Grid</h2>
+        <div class="div_centrat_fila">
+            <div class="div_centrat">
+                <h2>Flexbox</h2>
+                <ol>
+                    <b>Casos comuns per Flexbox:</b>
+                    <li>
+                        Quan vols alinear elements en fila o columna, com
+                        botons en una barra de navegació o imatges en una
+                        galeria.
+                    </li>
+                    <li>
+                        Quan vols distribuir l'espai entre elements en una fila
+                        (per exemple, centrant un element o espaiant-los
+                        uniformement).
+                    </li>
+                    <li>
+                        Quan els elements han de créixer o reduir-se per
+                        omplir l'espai disponible, com en una barra lateral o
+                        una fila de cartes.
+                    </li>
+                </ol>
 
+            </div>
+            <div>
+                <img src="/imatges/vs.png" alt="versus">
+
+            </div>
+            <div class="div_centrat">
+                <h2>Grid</h2>
+                <ol>
+                    <b>Casos comuns per CSS Grid:</b>
+                    <li>
+                        Quan vols crear una pàgina amb una estructura
+                        complexa (com una pàgina amb capçalera, barra
+                        lateral, contingut principal i peu de pàgina).
+                    </li>
+                    <li>
+                        Quan tens un disseny en format de quadrícula
+                        amb files i columnes, com un tauler de fotos o un
+                        disseny de cartes de productes.
+                    </li>
+                    <li>
+                        Quan vols controlar exactament on va cada
+                        element en la quadrícula (pots col·locar elements
+                        en qualsevol cel·la de la quadrícula).
+                    </li>
+                </ol>
+            </div>
+        </div>
+
+        <p>
+            Quan es tracta de crear dissenys flexibles, adaptables i organitzats, Flexbox i CSS Grid són les dues eines
+            més
+            poderoses del CSS. Amb elles pots controlar la disposició dels elements en la pàgina, ja sigui en una fila,
+            columna o
+            en quadrícules complexes, adaptant els elements fàcilment a diferents mides de pantalla i requeriments.
+        </p>
+        <h3>1. Flexbox avançat: alineació, flex-shrink, align-self</h3>
+        <p>
+            Flexbox és una eina molt flexible per crear dissenys en fila o columna, on els elements s’alineen i ajusten
+            automàticament segons l’espai
+            disponible.
+        </p>
+        <div class="div_centrat_fila">
+            <div class="div_centrat">
+                <p>
+                    <b>flex-shrink:</b> Controla com es redueix la mida d’un element quan no hi
+                    ha prou espai disponible. Valors més grans permeten que l'element es
+                    redueixi més.
+                </p>
+                <div class="div_centrat">
+                    <h3>Exemple:</h3>
+                    <div class="capsa">
+                        .element { <br>
+                        flex-shrink: 1; /* Permet que l'element es redueixi quan no hi ha espai suficient */ <br>
+                        } <br>
+                    </div>
+                </div>
+            </div>
+            <div class="div_centrat">
+                <p>
+                    <b>align-self:</b> Permet que un sol element en un contenidor flex tingui
+                    una alineació diferent a la resta d’elements. Els valors poden ser
+                    flex-start, flex-end, center, baseline o stretch.
+                </p>
+                <div class="div_centrat">
+                    <h3>Exemple:</h3>
+                    <div class="capsa">
+                        .element { <br>
+                        align-self: center; /* Centra aquest element individualment dins del contenidor */ <br>
+                        } <br>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <h3>2. Grid Layout: creacio de quadricules</h3>
+        <p>
+            CSS Grid Layout és una eina més potent que Flexbox quan es tracta de crear layouts en dues
+            dimensions (filera i columna). Grid permet col·locar elements en una quadrícula amb molta precisió,
+            controlant la mida de les files i columnes, i permetent que els elements s’ajustin a l’espai disponible.
+        </p>
+        <h3>Propietats clau en CSS Grid:</h3>
+        <p>
+            <b>grid-template-columns i grid-template-rows:</b>
+            Defineixen el nombre i la mida de les columnes i files dins
+            del contenidor grid.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                .grid { <br>
+                display: grid; <br>
+                grid-template-columns: 1fr 2fr 1fr; /* Defineix 3 columnes amb mides flexibles */ <br>
+                grid-template-rows: 100px auto; /* Defineix dues files: una fixa i una automàtica */ <br>
+                } <br>
+            </div>
+        </div>
+        <p>
+            <b>grid-column i grid-row:</b> Permeten que un
+            element ocupi diverses columnes o files dins de
+            la quadrícula.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                .element-gran { <br>
+                grid-column: span 2; /* L'element ocuparà 2 columnes */ <br>
+                grid-row: span 1; /* L'element ocuparà només 1 fila */ <br>
+                } <br>
+            </div>
+        </div>
+        <p>
+            <b>gap:</b> Defineix l'espai entre les files i columnes de
+            la quadrícula.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                .grid { <br>
+                gap: 20px; /* Defineix un espai de 20 píxels entre les files i columnes */ <br>
+                } <br>
+            </div>
+        </div>
+        <h3>Exemple bàsic amb CSS Grid:</h3>
+        <ol>
+            <li>La quadrícula té 3 columnes iguals.</li>
+            <li>L'element 2 ocupa dues columnes
+                gràcies a grid-column: span 2.</li>
+        </ol>
+        <div class="div_centrat_fila">
+            <div class="div_centrat">
+                <h3>Exemple:</h3>
+                <div class="capsa">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="ca"&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                    &lt;title&gt;Flexbox i Grid combinats&lt;/title&gt;<br>
+                    &lt;style&gt;<br>
+                    .grid {<br>
+                    display: grid;<br>
+                    grid-template-columns: 1fr 2fr;<br>
+                    gap: 10px;<br>
+                    height: 300px;<br>
+                    }<br>
+                    .element {<br>
+                    background-color: lightblue;<br>
+                    padding: 10px;<br>
+                    }<br>
+                    .flex {<br>
+                    display: flex;<br>
+                    justify-content: space-around; /* Flexbox dins del contenidor grid */<br>
+                    align-items: center;<br>
+                    background-color: lightgreen;<br>
+                    height: 100%;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;div class="grid"&gt;<br>
+                    &lt;div class="element"&gt;Element 1&lt;/div&gt;<br>
+                    &lt;div class="flex"&gt;<br>
+                    &lt;div&gt;Flex Element 1&lt;/div&gt;<br>
+                    &lt;div&gt;Flex Element 2&lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/div&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+                </div>
+            </div>
+            <div class="div_centrat capsa ">
+                <div class="grid">
+                    <div class="element1">Element 1</div>
+                    <div class="flex">
+                        <div>Flex Element 1</div>
+                        <div>Flex Element 2</div>
+                    </div>
+                </div>
+            </div>
+        </div>
 
 
     </section>
