@@ -326,6 +326,7 @@ h1 {
 .div4a {
     grid-area: 2 / 2 / 3 / 3;
 }
+
 /*Tot aquests estils estan comentats perque sinos afectarien a tot el codi i no nomes a l'exemple de CSS avançat*/
 /* input[type="text"] {
     border: 2px solid blue;
@@ -345,4 +346,24 @@ a:hover {
 h1::before {
     content: "🔹 ";
 } */
+@font-face {
+    font-family: "Lato";
+    src: url("fonts/Lato-Regular.woff2") format("woff2"),
+        url("fonts/Lato-Regular.woff") format("woff");
+}
 
+.ex9 {
+    font-family: "Lato", sans-serif;
+    line-height: 1.6;
+}
+
+.ex10 {
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.ex11 {
+    font-weight: 300;
+    font-style: italic;
+}

@@ -433,10 +433,217 @@
     </section>
     <hr>
     <section>
+        <h2 id="fonts">Fonts i tipografia avançades</h2>
+        <p>
+            El control de la tipografia en una pàgina web és crucial per garantir una bona llegibilitat i una estètica
+            consistent. En
+            CSS avançat, tens accés a un conjunt de propietats que et permeten controlar diversos aspectes de les fonts,
+            com la
+            seva càrrega dinàmica, espaiat, pes, i línies de text. També explorarem com utilitzar fonts personalitzades
+            amb la regla
+            @font-face.
+        </p>
+        <h3>1. Tipografies web amb @font-face</h3>
+        <p>
+            La regla @font-face permet utilitzar fonts
+            personalitzades que no estan disponibles al sistema
+            de l'usuari. Això significa que pots carregar fonts
+            específiques des del teu servidor o des d'una font
+            externa com Google Fonts, garantint una coherència
+            tipogràfica entre tots els usuaris, independentment
+            del dispositiu o navegador que utilitzin.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                @font-face { <br>
+                font-family: "Open Sans"; <br>
+                src: url("fonts/OpenSans-Regular.woff2") format("woff2"), <br>
+                url("fonts/OpenSans-Regular.woff") format("woff"); <br>
+                } <br>
+                body { <br>
+                font-family: "Open Sans", sans-serif; <br>
+                } <br>
+            </div>
+        </div>
+        <h3>Bancs de tipografies</h3>
+        <div class="div_centrat">
+            <img src="/imatges/fonts.png" alt="Bancs de tipografies">
+        </div>
+        <h3>2. Control avançat de tipografia</h3>
+        <p>
+            A més de definir fonts personalitzades, CSS ofereix propietats avançades per controlar altres aspectes
+            tipogràfics,
+            com l'espai entre lletres, el gruix de la font o l'alçada de les línies.
+        </p>
+        <h3>a) Propietat letter-spacing</h3>
+        <p>
+            La propietat letter-spacing permet ajustar l'espai entre
+            les lletres d'un text, fent que el text es vegi més
+            comprimit o espaiat.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                h1 { <br>
+                letter-spacing: 2px; /* Augmenta l'espai entre lletres */ <br>
+                } <br>
+            </div>
+        </div>
+        <h3>b) Propietat line-height</h3>
+        <p>
+            La propietat line-height controla l'alçada de les línies de
+            text. Una alçada de línia més gran augmenta l'espai entre
+            les línies, cosa que pot millorar la llegibilitat.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                p { <br>
+                line-height: 1.6; /* Augmenta l'alçada de les línies */ <br>
+                } <br>
+            </div>
+        </div>
+        <h3>c) Propietat font-weight</h3>
+        <p>
+            La propietat font-weight controla el gruix del text. A més
+            dels valors normal i bold, es poden utilitzar valors
+            numèrics entre 100 (molt prim) i 900 (molt gruixut),
+            oferint més flexibilitat.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                h1 { <br>
+                font-weight: 700; /* Gruix equivalent a negreta */ <br>
+                } <br>
+                p { <br>
+                font-weight: 300; /* Gruix més prim */ <br>
+                } <br>
+            </div>
+        </div>
+        <h3>d) Propietat font-style</h3>
+        <p>
+            La propietat font-style permet definir si el text es
+            mostrarà en estil normal, cursiva o obliqua. És útil per
+            donar èmfasi al text.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                em { <br>
+                font-style: italic; /* Mostra el text en cursiva */ <br>
+                } <br>
+            </div>
+        </div>
+        <h3>e) Propietat text-transform</h3>
+        <p>
+            Aquesta propietat permet canviar la capitalització del
+            text, convertint-lo tot en majúscules, minúscules o
+            capitalitzant la primera lletra de cada paraula. <br>
+            <b>uppercase:</b> Converteix tot el text en majúscules. <br>
+            <b>lowercase:</b> Converteix tot el text en minúscules. <br>
+            <b>capitalize:</b> Capitalitza la primera lletra de cada paraula.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                em { <br>
+                text-transform: uppercase; <br>
+                } <br>
+            </div>
+        </div>
+        <h3>3. Ús del Web Open Font Format (WOFF)</h3>
+        <p>
+            WOFF i WOFF2 són formats de font comprimits dissenyats específicament per a ús web. Aquests formats
+            proporcionen una compressió més eficient que els formats tradicionals, millorant el temps de càrrega de les
+            pàgines sense perdre qualitat tipogràfica. És recomanable utilitzar WOFF2 quan sigui possible, ja que és el
+            format
+            més modern i optimitzat.
+        </p>
+        <div class="div_centrat">
+            <h3>Exemple:</h3>
+            <div class="capsa">
+                @font-face { <br>
+                font-family: "Roboto"; <br>
+                src: url("fonts/Roboto-Regular.woff2") format("woff2"), <br>
+                url("fonts/Roboto-Regular.woff") format("woff"); <br>
+                } <br>
+            </div>
+        </div>
+        <p>
+            L'exemple carrega la font "Roboto" utilitzant els formats WOFF i WOFF2, garantint compatibilitat amb
+            navegadors
+            antics i moderns.
+        </p>
+
+        <h3>Exemple complet de propietats avançades de fonts i tipografia:</h3>
+        <ul>
+            <li>
+                Utilitzem la font personalitzada Lato
+                carregada amb WOFF2 i WOFF.
+            </li>
+            <li>
+                Les propietats letter-spacing, line-height, i
+                font-weight s'utilitzen per controlar l'espaiat
+                entre lletres, l'alçada de les línies i el gruix
+                de la font.
+            </li>
+            <li>
+                text-transform converteix el títol en
+                majúscules.
+            </li>
+        </ul>
+
+        <div class="div_centrat_fila">
+            <div class="div_centrat">
+                <h3>Exemple:</h3>
+                <div class="capsa">
+                    &lt;!DOCTYPE html&gt;<br>
+                    &lt;html lang="ca"&gt;<br>
+                    &lt;head&gt;<br>
+                    &lt;meta charset="UTF-8"&gt;<br>
+                    &lt;meta name="viewport" content="width=device-width, initial-scale=1.0"&gt;<br>
+                    &lt;title&gt;Propietats avançades de fonts&lt;/title&gt;<br>
+                    &lt;style&gt;<br>
+                    @font-face {<br>
+                    font-family: "Lato";<br>
+                    src: url("fonts/Lato-Regular.woff2") format("woff2"),<br>
+                    url("fonts/Lato-Regular.woff") format("woff");<br>
+                    }<br>
+                    body {<br>
+                    font-family: "Lato", sans-serif;<br>
+                    line-height: 1.6;<br>
+                    }<br>
+                    h1 {<br>
+                    font-weight: 700;<br>
+                    letter-spacing: 2px;<br>
+                    text-transform: uppercase;<br>
+                    }<br>
+                    p {<br>
+                    font-weight: 300;<br>
+                    font-style: italic;<br>
+                    }<br>
+                    &lt;/style&gt;<br>
+                    &lt;/head&gt;<br>
+                    &lt;body&gt;<br>
+                    &lt;h1&gt;Propietats avançades de fonts&lt;/h1&gt;<br>
+                    &lt;p&gt;Aquest és un paràgraf amb estil cursiva i un pes lleuger de font.&lt;/p&gt;<br>
+                    &lt;/body&gt;<br>
+                    &lt;/html&gt;<br>
+
+                </div>
+            </div>
+            <div class="div_centrat capsa ex9">
+                <h3 class="ex10">Propietats avançades de fonts</h3>
+                <p class="ex11">Aquest és un paràgraf amb estil cursiva i un pes lleuger de font.</p>
+
+            </div>
+        </div>
 
 
 
-        
+
     </section>
 
 </body>
